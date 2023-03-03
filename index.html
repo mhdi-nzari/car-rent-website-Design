@@ -1,0 +1,2075 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Car Rent Website Design</title>
+
+     <link rel="stylesheet" href="./src/css/owl.theme.default.min.css">
+     <link rel="stylesheet" href="./src/css/owl.carousel.min.css">
+     <link rel="stylesheet" href="./src/css/output.css">
+</head>
+
+<body class="w-full h-screen overflow-x-hidden  bg-[#F6F7F9] ">
+
+     <!-- header Content -->
+     <header class="w-full flex space-y-5  ">
+          <!-- mobile header -->
+          <div class="flex flex-col w-full gap-y-10  md:hidden px-6 md:px-20">
+               <!-- wrapper One -->
+               <div class="flex items-center w-full justify-between">
+                    <!-- logoType -->
+                    <p class="text-blue-500 font-bold text-[24px] tracking-normal">MORENT</p>
+
+                    <!-- profile Account -->
+                    <div class="w-fit h-fit">
+                         <img src="./src/image/Imageprofile.png" class="rounded-full w-8 h-8" alt="profile">
+                    </div>
+               </div>
+               <!-- wrapper Two -->
+               <div class="flex w-full gap-x-2">
+                    <!-- searchBox -->
+                    <div class="flex items-center justify-center border border-solid border-[#C3D4E9
+                    ] gap-3 basis-10/12 bg-transparent rounded-[10px] py-3 pl-6 pr-10 text-secondary-400">
+                         <span>
+                              <svg class="text-red-400" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                   xmlns="http://www.w3.org/2000/svg">
+                                   <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+                                        stroke="#596780" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                   <path d="M22 22L20 20" stroke="#596780" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                              </svg>
+
+                         </span>
+                         <input type="text" placeholder="Search something here"
+                              class="w-full bg-transparent  placeholder:text-[#596780] placeholder:text-base text-xl placeholder:font-medium">
+                    </div>
+                    <button class="basis-2/12  flex items-center justify-center border border-solid border-[#C3D4E9
+                    ] rounded-[10px] w-full h-full ">
+                         <span>
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                   xmlns="http://www.w3.org/2000/svg">
+                                   <path d="M22 6.5H16" stroke="#596780" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                   <path d="M6 6.5H2" stroke="#596780" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                   <path d="M10 10C11.933 10 13.5 8.433 13.5 6.5C13.5 4.567 11.933 3 10 3C8.067 3 6.5 4.567 6.5 6.5C6.5 8.433 8.067 10 10 10Z"
+                                        stroke="#596780" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                   <path d="M22 17.5H18" stroke="#596780" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                   <path d="M8 17.5H2" stroke="#596780" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                   <path d="M14 21C15.933 21 17.5 19.433 17.5 17.5C17.5 15.567 15.933 14 14 14C12.067 14 10.5 15.567 10.5 17.5C10.5 19.433 12.067 21 14 21Z"
+                                        stroke="#596780" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+
+                         </span>
+                    </button>
+               </div>
+          </div>
+
+
+          <!-- desktop-header -->
+
+          <div id="navbarDesktop"
+               class="w-full bg-white drop-shadow-md hidden md:flex relative justify-between top-0  py-6 px-20 z-50 !mt-0">
+               <!-- wrapper One -->
+               <div class="flex items-center w-full justify-between">
+                    <!-- logoType -->
+                    <p class="text-blue-500 font-bold text-[24px] tracking-normal">MORENT</p>
+
+
+               </div>
+
+               <div class="flex items-center gap-3">
+
+
+                    <div class="flex gap-3">
+
+
+                         <!-- heart icon -->
+                         <a href="" class="relative p-1 border border-solid rounded-full">
+
+                              <span>
+                                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.44 3.09998C14.63 3.09998 13.01 3.97998 12 5.32998C10.99 3.97998 9.37 3.09998 7.56 3.09998C4.49 3.09998 2 5.59998 2 8.68998C2 9.87998 2.19 10.98 2.52 12C4.1 17 8.97 19.99 11.38 20.81C11.72 20.93 12.28 20.93 12.62 20.81C15.03 19.99 19.9 17 21.48 12C21.81 10.98 22 9.87998 22 8.68998C22 5.59998 19.51 3.09998 16.44 3.09998Z"
+                                             fill="#596780" />
+                                   </svg>
+
+
+                              </span>
+
+
+                         </a>
+
+
+                         <!-- setting icon -->
+                         <a href="" class="relative p-1 border border-solid rounded-full">
+
+                              <span>
+                                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.3399 14.49L18.3399 12.83C18.1299 12.46 17.9399 11.76 17.9399 11.35V8.82C17.9399 6.47 16.5599 4.44 14.5699 3.49C14.0499 2.57 13.0899 2 11.9899 2C10.8999 2 9.91994 2.59 9.39994 3.52C7.44994 4.49 6.09994 6.5 6.09994 8.82V11.35C6.09994 11.76 5.90994 12.46 5.69994 12.82L4.68994 14.49C4.28994 15.16 4.19994 15.9 4.44994 16.58C4.68994 17.25 5.25994 17.77 5.99994 18.02C7.93994 18.68 9.97994 19 12.0199 19C14.0599 19 16.0999 18.68 18.0399 18.03C18.7399 17.8 19.2799 17.27 19.5399 16.58C19.7999 15.89 19.7299 15.13 19.3399 14.49Z"
+                                             fill="#596780" />
+                                        <path d="M14.8299 20.01C14.4099 21.17 13.2999 22 11.9999 22C11.2099 22 10.4299 21.68 9.87993 21.11C9.55993 20.81 9.31993 20.41 9.17993 20C9.30993 20.02 9.43993 20.03 9.57993 20.05C9.80993 20.08 10.0499 20.11 10.2899 20.13C10.8599 20.18 11.4399 20.21 12.0199 20.21C12.5899 20.21 13.1599 20.18 13.7199 20.13C13.9299 20.11 14.1399 20.1 14.3399 20.07C14.4999 20.05 14.6599 20.03 14.8299 20.01Z"
+                                             fill="#596780" />
+                                   </svg>
+
+
+                              </span>
+
+                              <div class="absolute right-0 -top-1">
+                                   <span class="relative flex h-3 w-3">
+                                        <span
+                                             class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                                        <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+                                   </span>
+                              </div>
+                         </a>
+
+                         <!-- setting icon -->
+                         <a href="" class="p-1 border border-solid rounded-full">
+
+                              <span>
+                                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.1 9.22006C18.29 9.22006 17.55 7.94006 18.45 6.37006C18.97 5.46006 18.66 4.30006 17.75 3.78006L16.02 2.79006C15.23 2.32006 14.21 2.60006 13.74 3.39006L13.63 3.58006C12.73 5.15006 11.25 5.15006 10.34 3.58006L10.23 3.39006C9.78 2.60006 8.76 2.32006 7.97 2.79006L6.24 3.78006C5.33 4.30006 5.02 5.47006 5.54 6.38006C6.45 7.94006 5.71 9.22006 3.9 9.22006C2.86 9.22006 2 10.0701 2 11.1201V12.8801C2 13.9201 2.85 14.7801 3.9 14.7801C5.71 14.7801 6.45 16.0601 5.54 17.6301C5.02 18.5401 5.33 19.7001 6.24 20.2201L7.97 21.2101C8.76 21.6801 9.78 21.4001 10.25 20.6101L10.36 20.4201C11.26 18.8501 12.74 18.8501 13.65 20.4201L13.76 20.6101C14.23 21.4001 15.25 21.6801 16.04 21.2101L17.77 20.2201C18.68 19.7001 18.99 18.5301 18.47 17.6301C17.56 16.0601 18.3 14.7801 20.11 14.7801C21.15 14.7801 22.01 13.9301 22.01 12.8801V11.1201C22 10.0801 21.15 9.22006 20.1 9.22006ZM12 15.2501C10.21 15.2501 8.75 13.7901 8.75 12.0001C8.75 10.2101 10.21 8.75006 12 8.75006C13.79 8.75006 15.25 10.2101 15.25 12.0001C15.25 13.7901 13.79 15.2501 12 15.2501Z"
+                                             fill="#596780" />
+                                   </svg>
+
+                              </span>
+                         </a>
+
+
+                    </div>
+
+
+                    <!-- profile Account -->
+                    <div class="w-fit h-fit">
+                         <img src="./src/image/Imageprofile.png" class="rounded-full w-10" alt="profile">
+                    </div>
+
+               </div>
+          </div>
+     </header>
+
+     <!-- main Content -->
+     <main class="flex flex-col px-6 md:px-20 mt-24">
+          <!-- banner -->
+          <section class="flex  flex-col w-full gap-10 lg:flex-row">
+               <figure
+                    class="bg-blue-500 rounded-[10px] p-4  w-full relative overflow-hidden after:bg-banner-pattern after:bg-left-bottom after:bg-no-repeat after:absolute after:w-full after:h-full after:left-0 after:bottom-0 after:z-[-1] z-[2]">
+
+                    <p class="text-white text-16 font-semibold">The Best Platform for Car Rental</p>
+                    <p class="text-white text-[14px] mt-12 mb-16 leading-[1.9rem] font-medium">Ease of doing a car
+                         rental
+                         safely and
+                         reliably. Of
+                         course at a low
+                         price.</p>
+
+
+                    <button class="px-10 py-4 font-medium text-white rounded-md bg-primary-500">Rental Car</button>
+
+                    <div class="w-full mt-6">
+                         <img src="./src/image/Car.png" class="w-[196px] h-[56px] mx-auto" alt="">
+                    </div>
+               </figure>
+               <figure
+                    class="hidden md:block bg-blue-500 rounded-[10px] p-4  w-full relative overflow-hidden after:bg-banner-pattern after:bg-left-bottom after:bg-no-repeat after:absolute after:w-full after:h-full after:left-0 after:bottom-0 after:z-[-1] z-[2]">
+
+                    <p class="text-white text-16 font-semibold">The Best Platform for Car Rental</p>
+                    <p class="text-white text-[14px] mt-12 mb-16 leading-[1.9rem] font-medium">Ease of doing a car
+                         Providing cheap car rental services and safe and comfortable facilities</p>
+
+
+                    <button class="px-10 py-4 font-medium text-white rounded-md bg-primary-500">Rental Car</button>
+
+                    <div class="w-full mt-6">
+                         <img src="./src/image/Car2.png" class="w-[196px] h-[56px] mx-auto" alt="">
+                    </div>
+               </figure>
+          </section>
+
+          <!-- fillter -->
+          <section class="flex flex-col w-full lg:flex-row   gap-5 my-10">
+
+               <!-- Pick - up Wrapper -->
+               <div class="flex flex-1 flex-col bg-white shadow-def rounded-[10px] p-16 w-full gap-y-2">
+                    <!-- badge & title -->
+                    <div class="flex justify-start items-center gap-2 pb-5">
+                         <span class="relative flex items-center justify-center h-3 w-3">
+                              <span
+                                   class="animate-ping absolute  h-full w-full rounded-full flex items-center justify-center bg-primary-500 opacity-75"></span>
+                              <span
+                                   class="relative flex items-center justify-center rounded-full h-2 w-2 bg-primary-500 "></span>
+                         </span>
+
+                         <p class="text-secondary-500 text-16 font-semibold whitespace-nowrap">Pick - Up</p>
+                    </div>
+
+                    <div class="flex flex-wrap justify-between  gap-3">
+                         <!-- Location -->
+                         <div class="flex w-[30%] grow flex-col justify-start border-r border-solid">
+                              <p class="font-bold text-16 pb-1">Locations</p>
+                              <div class="flex w-full pr-7">
+                                   <select name="" id="" class=" text-secondary-300 text-[14px]">
+                                        <option value="0" class="text-secondary-300">Semarang</option>
+                                        <option value="1">Audi</option>
+                                        <option value="2">BMW</option>
+                                        <option value="3">Citroen</option>
+                                        <option value="4">Ford</option>
+                                        <option value="5">Honda</option>
+
+                                   </select>
+                              </div>
+                         </div>
+                         <!-- Date -->
+                         <div class="flex w-[30%] grow flex-col justify-start border-r border-solid">
+                              <p class="font-bold text-16 pb-1">Date</p>
+                              <div class="flex w-full pr-5">
+                                   <input type="date" value="2022-06-01"
+                                        class="text-secondary-300 text-[14px] w-full border-none" name="" id="">
+                              </div>
+                         </div>
+
+                         <!-- Time -->
+                         <div class="flex w-[30%] grow flex-col justify-start">
+                              <p class="font-bold text-16 pb-1">Time</p>
+                              <div class="flex w-full">
+                                   <input class="text-secondary-300 text-[14px]" type="time" value="07:00" name=""
+                                        id="">
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="flex items-center justify-center ">
+
+                    <button class="p-5 bg-primary-500 rounded-md">
+                         <span class="flex items-center justify-center">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                   xmlns="http://www.w3.org/2000/svg">
+                                   <path d="M7.16051 3.83577L7.16051 17.4536" stroke="white" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                   <path d="M3.08273 7.93188L7.1605 3.83522L11.2383 7.93188" stroke="white"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                   <path d="M17.0887 20.1671L17.0887 6.54934" stroke="white" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                   <path d="M21.1665 16.071L17.0887 20.1677L13.0109 16.071" stroke="white"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+
+                         </span>
+                    </button>
+               </div>
+
+               <!-- Drop - off Wrapper -->
+               <div class="flex flex-1 flex-col bg-white shadow-def rounded-[10px] p-16 w-full gap-y-2">
+                    <!-- badge & title -->
+                    <div class="flex justify-start items-center gap-2 pb-5">
+                         <span class="relative flex items-center justify-center h-3 w-3">
+                              <span
+                                   class="animate-ping absolute  h-full w-full rounded-full flex items-center justify-center bg-information-500 opacity-75"></span>
+                              <span
+                                   class="relative flex items-center justify-center rounded-full h-2 w-2 bg-information-500 "></span>
+                         </span>
+
+                         <p class="text-secondary-500 text-16 font-semibold whitespace-nowrap">Drop - Off</p>
+                    </div>
+
+                    <div class="flex flex-wrap justify-between  gap-3">
+                         <!-- Location -->
+                         <div class="flex w-[30%] grow flex-col justify-start border-r border-solid">
+                              <p class="font-bold text-16 pb-1">Locations</p>
+                              <div class="flex w-full pr-7">
+                                   <select name="" id="" class=" text-secondary-300 text-[14px]">
+                                        <option value="0" class="text-secondary-300">Semarang</option>
+                                        <option value="1">Audi</option>
+                                        <option value="2">BMW</option>
+                                        <option value="3">Citroen</option>
+                                        <option value="4">Ford</option>
+                                        <option value="5">Honda</option>
+
+                                   </select>
+                              </div>
+                         </div>
+                         <!-- Date -->
+                         <div class="flex w-[30%] grow flex-col justify-start border-r border-solid">
+                              <p class="font-bold text-16 pb-1">Date</p>
+                              <div class="flex w-full pr-5">
+                                   <input type="date" value="2022-06-01"
+                                        class="text-secondary-300 text-[14px] w-full border-none" name="" id="">
+                              </div>
+                         </div>
+
+                         <!-- Time -->
+                         <div class="flex w-[30%] grow flex-col justify-start">
+                              <p class="font-bold text-16 pb-1">Time</p>
+                              <div class="flex w-full">
+                                   <input class="text-secondary-300 text-[14px]" type="time" value="07:00" name=""
+                                        id="">
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <!-- Popular Car -->
+          <section class="flex flex-col gap-5 w-full my-10">
+               <!-- title bar -->
+               <div class="w-full flex justify-between">
+                    <p class="text-16 font-semibold text-secondary-300">Popular Car</p>
+                    <p class="text-16 font-semibold text-primary-500">Veiw All</p>
+               </div>
+
+               <div class="w-full ">
+                    <!-- title item -->
+
+
+                    <!-- wraper Slider -->
+                    <div class="owl-carousel owl-theme">
+                         <!-- item Product -->
+                         <figure class="flex flex-1 flex-col bg-white shadow-def rounded-xl p-3">
+                              <!-- wrapper One - title & like  -->
+                              <div class="flex items-center justify-between w-full">
+                                   <div class="flex flex-col">
+                                        <a href="" class="text-secondary-500  text-16 font-semibold">Koenigsegg</a>
+                                        <span class="font-medium text-12 text-secondary-300 mt-1">Sport</spaa>
+                                   </div>
+                                   <!-- heart Icon -->
+                                   <span class="cursor-pointer">
+                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M14.44 0.0999756C12.63 0.0999756 11.01 0.979976 10 2.32998C8.99 0.979976 7.37 0.0999756 5.56 0.0999756C2.49 0.0999756 0 2.59998 0 5.68998C0 6.87998 0.19 7.97998 0.52 8.99998C2.1 14 6.97 16.99 9.38 17.81C9.72 17.93 10.28 17.93 10.62 17.81C13.03 16.99 17.9 14 19.48 8.99998C19.81 7.97998 20 6.87998 20 5.68998C20 2.59998 17.51 0.0999756 14.44 0.0999756Z"
+                                                  fill="#ED3F3F" />
+                                        </svg>
+
+                                   </span>
+                              </div>
+
+                              <figcaption class="w-full flex flex-col">
+                                   <!-- imgae product -->
+                                   <div class="w-full h-fit mt-7 ">
+
+                                        <img src="./src/image/carItem04.png" class="mx-auto !w-[180px] !h-[56px]"
+                                             alt="">
+                                   </div>
+
+                                   <!-- detail product -->
+                                   <div class="flex flex-row w-full justify-between my-10">
+
+                                        <!-- gasoline effect -->
+                                        <div class="flex w-fit items-center ">
+                                             <span>
+                                                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                       xmlns="http://www.w3.org/2000/svg">
+                                                       <path d="M13.0317 5.44249L11.8651 4.85916C11.6492 4.75416 11.3809 4.83582 11.2759 5.05166C11.1651 5.27332 11.2526 5.53582 11.4684 5.64082L12.3959 6.10166V8.89582L10.2084 8.90166V2.91666C10.2084 1.74999 9.42675 1.16666 8.45841 1.16666H3.79175C2.82341 1.16666 2.04175 1.74999 2.04175 2.91666V12.3958H1.16675C0.927581 12.3958 0.729248 12.5942 0.729248 12.8333C0.729248 13.0725 0.927581 13.2708 1.16675 13.2708H11.0834C11.3226 13.2708 11.5209 13.0725 11.5209 12.8333C11.5209 12.5942 11.3226 12.3958 11.0834 12.3958H10.2084V9.77666L12.8334 9.77082C13.0784 9.77082 13.2709 9.57249 13.2709 9.33332V5.83332C13.2709 5.66999 13.1776 5.51832 13.0317 5.44249ZM3.50008 4.01916C3.50008 3.20832 3.99591 2.91666 4.60258 2.91666H7.65341C8.25425 2.91666 8.75008 3.20832 8.75008 4.01916V4.73666C8.75008 5.54166 8.25425 5.83332 7.64758 5.83332H4.60258C3.99591 5.83332 3.50008 5.54166 3.50008 4.73082V4.01916ZM3.79175 7.14582H5.54175C5.78091 7.14582 5.97925 7.34416 5.97925 7.58332C5.97925 7.82249 5.78091 8.02082 5.54175 8.02082H3.79175C3.55258 8.02082 3.35425 7.82249 3.35425 7.58332C3.35425 7.34416 3.55258 7.14582 3.79175 7.14582Z"
+                                                            fill="#90A3BF" />
+                                                  </svg>
+
+
+
+                                             </span>
+                                             <p class="text-12 font-medium text-secondary-300 ml-1 lg:text-12">90L</p>
+                                        </div>
+
+                                        <!-- car effect -->
+                                        <div class="flex w-fit items-center">
+                                             <span>
+                                                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                       xmlns="http://www.w3.org/2000/svg">
+                                                       <path d="M7 1C3.688 1 1 3.688 1 7C1 10.312 3.688 13 7 13C10.312 13 13 10.312 13 7C13 3.688 10.318 1 7 1Z"
+                                                            fill="#90A3BF" />
+                                                       <rect x="2" y="2" width="10" height="10" rx="5" fill="white" />
+                                                       <path d="M7 3C4.792 3 3 4.792 3 7C3 9.208 4.792 11 7 11C9.208 11 11 9.208 11 7C11 4.792 9.212 3 7 3Z"
+                                                            fill="#90A3BF" />
+                                                       <rect x="8" y="6" width="4" height="2" fill="#90A3BF" />
+                                                       <rect x="2" y="6" width="4" height="2" fill="#90A3BF" />
+                                                       <rect x="6" y="8" width="2" height="4" fill="#90A3BF" />
+                                                       <rect x="4" y="4" width="6" height="6" rx="3" fill="white" />
+                                                  </svg>
+
+
+
+                                             </span>
+                                             <p class="text-12 font-medium text-secondary-300 ml-1 lg:text-12">Manual
+                                             </p>
+                                        </div>
+
+                                        <!-- capacity effect -->
+                                        <div class="flex w-fit items-center">
+                                             <span>
+                                                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                       xmlns="http://www.w3.org/2000/svg">
+                                                       <path d="M5.25008 1.16666C3.72175 1.16666 2.47925 2.40916 2.47925 3.93749C2.47925 5.43666 3.65175 6.64999 5.18008 6.70249C5.22675 6.69666 5.27341 6.69666 5.30841 6.70249C5.32008 6.70249 5.32591 6.70249 5.33758 6.70249C5.34341 6.70249 5.34341 6.70249 5.34925 6.70249C6.84258 6.64999 8.01508 5.43666 8.02091 3.93749C8.02091 2.40916 6.77841 1.16666 5.25008 1.16666Z"
+                                                            fill="#90A3BF" />
+                                                       <path d="M8.21331 8.25418C6.58581 7.16918 3.93164 7.16918 2.29248 8.25418C1.55164 8.75001 1.14331 9.42085 1.14331 10.1383C1.14331 10.8558 1.55164 11.5208 2.28664 12.0108C3.10331 12.5592 4.17664 12.8333 5.24998 12.8333C6.32331 12.8333 7.39664 12.5592 8.21331 12.0108C8.94831 11.515 9.35664 10.85 9.35664 10.1267C9.35081 9.40918 8.94831 8.74418 8.21331 8.25418Z"
+                                                            fill="#90A3BF" />
+                                                       <path d="M11.6607 4.28165C11.754 5.41332 10.949 6.40499 9.83488 6.53915C9.82905 6.53915 9.82905 6.53915 9.82321 6.53915H9.80571C9.77071 6.53915 9.73571 6.53915 9.70655 6.55082C9.14071 6.57999 8.62155 6.39915 8.23071 6.06665C8.83155 5.52999 9.17571 4.72499 9.10571 3.84999C9.06488 3.37749 8.90155 2.94582 8.65655 2.57832C8.87821 2.46749 9.13488 2.39749 9.39738 2.37415C10.5407 2.27499 11.5615 3.12665 11.6607 4.28165Z"
+                                                            fill="#90A3BF" />
+                                                       <path d="M12.8276 9.67751C12.7809 10.2433 12.4192 10.7333 11.8126 11.0658C11.2292 11.3867 10.4942 11.5383 9.76506 11.5208C10.1851 11.1417 10.4301 10.6692 10.4767 10.1675C10.5351 9.44417 10.1909 8.75001 9.50256 8.19584C9.11172 7.88667 8.65672 7.64167 8.16089 7.46084C9.45006 7.08751 11.0717 7.33834 12.0692 8.14334C12.6059 8.57501 12.8801 9.11751 12.8276 9.67751Z"
+                                                            fill="#90A3BF" />
+                                                  </svg>
+
+
+
+
+                                             </span>
+                                             <p class="text-12 font-medium text-secondary-300 ml-1 lg:text-12">2 People
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <!-- pay section -->
+                                   <div class="flex flex-wrap w-full items-center">
+                                        <div class="flex flex-1 gap-1 items-center">
+                                             <span class="text-secondary-500 text-16 font-bold">$99.00/</span>
+                                             <span class="text-secondary-300 text-12 font-bold">day</span>
+                                        </div>
+                                        <div class="flex flex-1"> <button
+                                                  class="w-full h-fit px-2 py-2 bg-primary-500 text-white font-semibold text-12 rounded-md whitespace-nowrap">Rental
+                                                  Now</button></div>
+
+                                   </div>
+                              </figcaption>
+
+
+                         </figure>
+                         <!-- item Product -->
+                         <figure class="flex flex-1 flex-col bg-white shadow-def rounded-xl p-3">
+                              <!-- wrapper One - title & like  -->
+                              <div class="flex items-center justify-between w-full">
+                                   <div class="flex flex-col">
+                                        <a href="" class="text-secondary-500  text-16 font-semibold">Nissan GT - R</a>
+                                        <span class="font-medium text-12 text-secondary-300 mt-1">Sport</span>
+                                   </div>
+                                   <!-- heart Icon -->
+                                   <span class="cursor-pointer">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                                  stroke="#90A3BF" stroke-width="1.5" stroke-linecap="round"
+                                                  stroke-linejoin="round" />
+                                        </svg>
+
+
+                                   </span>
+                              </div>
+
+                              <figcaption class="w-full flex flex-col">
+                                   <!-- imgae product -->
+                                   <div class="w-full h-fit mt-7 ">
+
+                                        <img src="./src/image/carItem03.png" class="mx-auto !w-[180px] !h-[56px]"
+                                             alt="">
+                                   </div>
+
+                                   <!-- detail product -->
+                                   <div class="flex flex-row w-full justify-between my-10">
+
+                                        <!-- gasoline effect -->
+                                        <div class="flex w-fit items-center ">
+                                             <span>
+                                                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                       xmlns="http://www.w3.org/2000/svg">
+                                                       <path d="M13.0317 5.44249L11.8651 4.85916C11.6492 4.75416 11.3809 4.83582 11.2759 5.05166C11.1651 5.27332 11.2526 5.53582 11.4684 5.64082L12.3959 6.10166V8.89582L10.2084 8.90166V2.91666C10.2084 1.74999 9.42675 1.16666 8.45841 1.16666H3.79175C2.82341 1.16666 2.04175 1.74999 2.04175 2.91666V12.3958H1.16675C0.927581 12.3958 0.729248 12.5942 0.729248 12.8333C0.729248 13.0725 0.927581 13.2708 1.16675 13.2708H11.0834C11.3226 13.2708 11.5209 13.0725 11.5209 12.8333C11.5209 12.5942 11.3226 12.3958 11.0834 12.3958H10.2084V9.77666L12.8334 9.77082C13.0784 9.77082 13.2709 9.57249 13.2709 9.33332V5.83332C13.2709 5.66999 13.1776 5.51832 13.0317 5.44249ZM3.50008 4.01916C3.50008 3.20832 3.99591 2.91666 4.60258 2.91666H7.65341C8.25425 2.91666 8.75008 3.20832 8.75008 4.01916V4.73666C8.75008 5.54166 8.25425 5.83332 7.64758 5.83332H4.60258C3.99591 5.83332 3.50008 5.54166 3.50008 4.73082V4.01916ZM3.79175 7.14582H5.54175C5.78091 7.14582 5.97925 7.34416 5.97925 7.58332C5.97925 7.82249 5.78091 8.02082 5.54175 8.02082H3.79175C3.55258 8.02082 3.35425 7.82249 3.35425 7.58332C3.35425 7.34416 3.55258 7.14582 3.79175 7.14582Z"
+                                                            fill="#90A3BF" />
+                                                  </svg>
+
+
+
+                                             </span>
+                                             <p class="text-12 font-medium text-secondary-300 ml-1 lg:text-12">80L</p>
+                                        </div>
+
+                                        <!-- car effect -->
+                                        <div class="flex w-fit items-center">
+                                             <span>
+                                                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                       xmlns="http://www.w3.org/2000/svg">
+                                                       <path d="M7 1C3.688 1 1 3.688 1 7C1 10.312 3.688 13 7 13C10.312 13 13 10.312 13 7C13 3.688 10.318 1 7 1Z"
+                                                            fill="#90A3BF" />
+                                                       <rect x="2" y="2" width="10" height="10" rx="5" fill="white" />
+                                                       <path d="M7 3C4.792 3 3 4.792 3 7C3 9.208 4.792 11 7 11C9.208 11 11 9.208 11 7C11 4.792 9.212 3 7 3Z"
+                                                            fill="#90A3BF" />
+                                                       <rect x="8" y="6" width="4" height="2" fill="#90A3BF" />
+                                                       <rect x="2" y="6" width="4" height="2" fill="#90A3BF" />
+                                                       <rect x="6" y="8" width="2" height="4" fill="#90A3BF" />
+                                                       <rect x="4" y="4" width="6" height="6" rx="3" fill="white" />
+                                                  </svg>
+
+
+
+                                             </span>
+                                             <p class="text-12 font-medium text-secondary-300 ml-1 lg:text-12">Manual
+                                             </p>
+                                        </div>
+
+                                        <!-- capacity effect -->
+                                        <div class="flex w-fit items-center">
+                                             <span>
+                                                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                       xmlns="http://www.w3.org/2000/svg">
+                                                       <path d="M5.25008 1.16666C3.72175 1.16666 2.47925 2.40916 2.47925 3.93749C2.47925 5.43666 3.65175 6.64999 5.18008 6.70249C5.22675 6.69666 5.27341 6.69666 5.30841 6.70249C5.32008 6.70249 5.32591 6.70249 5.33758 6.70249C5.34341 6.70249 5.34341 6.70249 5.34925 6.70249C6.84258 6.64999 8.01508 5.43666 8.02091 3.93749C8.02091 2.40916 6.77841 1.16666 5.25008 1.16666Z"
+                                                            fill="#90A3BF" />
+                                                       <path d="M8.21331 8.25418C6.58581 7.16918 3.93164 7.16918 2.29248 8.25418C1.55164 8.75001 1.14331 9.42085 1.14331 10.1383C1.14331 10.8558 1.55164 11.5208 2.28664 12.0108C3.10331 12.5592 4.17664 12.8333 5.24998 12.8333C6.32331 12.8333 7.39664 12.5592 8.21331 12.0108C8.94831 11.515 9.35664 10.85 9.35664 10.1267C9.35081 9.40918 8.94831 8.74418 8.21331 8.25418Z"
+                                                            fill="#90A3BF" />
+                                                       <path d="M11.6607 4.28165C11.754 5.41332 10.949 6.40499 9.83488 6.53915C9.82905 6.53915 9.82905 6.53915 9.82321 6.53915H9.80571C9.77071 6.53915 9.73571 6.53915 9.70655 6.55082C9.14071 6.57999 8.62155 6.39915 8.23071 6.06665C8.83155 5.52999 9.17571 4.72499 9.10571 3.84999C9.06488 3.37749 8.90155 2.94582 8.65655 2.57832C8.87821 2.46749 9.13488 2.39749 9.39738 2.37415C10.5407 2.27499 11.5615 3.12665 11.6607 4.28165Z"
+                                                            fill="#90A3BF" />
+                                                       <path d="M12.8276 9.67751C12.7809 10.2433 12.4192 10.7333 11.8126 11.0658C11.2292 11.3867 10.4942 11.5383 9.76506 11.5208C10.1851 11.1417 10.4301 10.6692 10.4767 10.1675C10.5351 9.44417 10.1909 8.75001 9.50256 8.19584C9.11172 7.88667 8.65672 7.64167 8.16089 7.46084C9.45006 7.08751 11.0717 7.33834 12.0692 8.14334C12.6059 8.57501 12.8801 9.11751 12.8276 9.67751Z"
+                                                            fill="#90A3BF" />
+                                                  </svg>
+
+
+
+
+                                             </span>
+                                             <p class="text-12 font-medium text-secondary-300 ml-1 lg:text-12">2 People
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <!-- pay section -->
+                                   <div class="flex flex-wrap w-full items-center">
+                                        <div class="flex flex-1 gap-1 items-center">
+                                             <div class="flex flex-col">
+                                                  <p class="text-secondary-500 text-16 font-bold">$80.00/
+
+
+                                                       <span class="text-secondary-300 text-12 font-bold ">day</span>
+
+                                                  </p>
+                                                  <p class="text-secondary-300 text-12 font-bold line-through">$100.00/
+                                                  </p>
+                                             </div>
+                                        </div>
+                                        <div class="flex flex-1"> <button
+                                                  class="w-full h-fit px-2 py-2 bg-primary-500 text-white font-semibold text-12 rounded-md whitespace-nowrap">Rental
+                                                  Now</button></div>
+
+                                   </div>
+                              </figcaption>
+
+
+                         </figure>
+                         <!-- item Product -->
+                         <figure class="flex flex-1 flex-col bg-white shadow-def rounded-xl p-3">
+                              <!-- wrapper One - title & like  -->
+                              <div class="flex items-center justify-between w-full">
+                                   <div class="flex flex-col">
+                                        <a href="" class="text-secondary-500  text-16 font-semibold">Rolls - Royce</a>
+                                        <span class="font-medium text-12 text-secondary-300 mt-1">Sedan</span>
+                                   </div>
+                                   <!-- heart Icon -->
+                                   <span class="cursor-pointer">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M16.44 3.09998C14.63 3.09998 13.01 3.97998 12 5.32998C10.99 3.97998 9.37 3.09998 7.56 3.09998C4.49 3.09998 2 5.59998 2 8.68998C2 9.87998 2.19 10.98 2.52 12C4.1 17 8.97 19.99 11.38 20.81C11.72 20.93 12.28 20.93 12.62 20.81C15.03 19.99 19.9 17 21.48 12C21.81 10.98 22 9.87998 22 8.68998C22 5.59998 19.51 3.09998 16.44 3.09998Z"
+                                                  fill="#ED3F3F" />
+                                        </svg>
+
+
+
+                                   </span>
+                              </div>
+
+                              <figcaption class="w-full flex flex-col">
+                                   <!-- imgae product -->
+                                   <div class="w-full h-fit mt-7 ">
+
+                                        <img src="./src/image/carItem02.png" class="mx-auto !w-[180px] !h-[56px]"
+                                             alt="">
+                                   </div>
+
+                                   <!-- detail product -->
+                                   <div class="flex flex-row w-full justify-between my-10">
+
+                                        <!-- gasoline effect -->
+                                        <div class="flex w-fit items-center ">
+                                             <span>
+                                                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                       xmlns="http://www.w3.org/2000/svg">
+                                                       <path d="M13.0317 5.44249L11.8651 4.85916C11.6492 4.75416 11.3809 4.83582 11.2759 5.05166C11.1651 5.27332 11.2526 5.53582 11.4684 5.64082L12.3959 6.10166V8.89582L10.2084 8.90166V2.91666C10.2084 1.74999 9.42675 1.16666 8.45841 1.16666H3.79175C2.82341 1.16666 2.04175 1.74999 2.04175 2.91666V12.3958H1.16675C0.927581 12.3958 0.729248 12.5942 0.729248 12.8333C0.729248 13.0725 0.927581 13.2708 1.16675 13.2708H11.0834C11.3226 13.2708 11.5209 13.0725 11.5209 12.8333C11.5209 12.5942 11.3226 12.3958 11.0834 12.3958H10.2084V9.77666L12.8334 9.77082C13.0784 9.77082 13.2709 9.57249 13.2709 9.33332V5.83332C13.2709 5.66999 13.1776 5.51832 13.0317 5.44249ZM3.50008 4.01916C3.50008 3.20832 3.99591 2.91666 4.60258 2.91666H7.65341C8.25425 2.91666 8.75008 3.20832 8.75008 4.01916V4.73666C8.75008 5.54166 8.25425 5.83332 7.64758 5.83332H4.60258C3.99591 5.83332 3.50008 5.54166 3.50008 4.73082V4.01916ZM3.79175 7.14582H5.54175C5.78091 7.14582 5.97925 7.34416 5.97925 7.58332C5.97925 7.82249 5.78091 8.02082 5.54175 8.02082H3.79175C3.55258 8.02082 3.35425 7.82249 3.35425 7.58332C3.35425 7.34416 3.55258 7.14582 3.79175 7.14582Z"
+                                                            fill="#90A3BF" />
+                                                  </svg>
+
+
+
+                                             </span>
+                                             <p class="text-12 font-medium text-secondary-300 ml-1 lg:text-12">70L</p>
+                                        </div>
+
+                                        <!-- car effect -->
+                                        <div class="flex w-fit items-center">
+                                             <span>
+                                                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                       xmlns="http://www.w3.org/2000/svg">
+                                                       <path d="M7 1C3.688 1 1 3.688 1 7C1 10.312 3.688 13 7 13C10.312 13 13 10.312 13 7C13 3.688 10.318 1 7 1Z"
+                                                            fill="#90A3BF" />
+                                                       <rect x="2" y="2" width="10" height="10" rx="5" fill="white" />
+                                                       <path d="M7 3C4.792 3 3 4.792 3 7C3 9.208 4.792 11 7 11C9.208 11 11 9.208 11 7C11 4.792 9.212 3 7 3Z"
+                                                            fill="#90A3BF" />
+                                                       <rect x="8" y="6" width="4" height="2" fill="#90A3BF" />
+                                                       <rect x="2" y="6" width="4" height="2" fill="#90A3BF" />
+                                                       <rect x="6" y="8" width="2" height="4" fill="#90A3BF" />
+                                                       <rect x="4" y="4" width="6" height="6" rx="3" fill="white" />
+                                                  </svg>
+
+
+
+                                             </span>
+                                             <p class="text-12 font-medium text-secondary-300 ml-1 lg:text-12">Manual
+                                             </p>
+                                        </div>
+
+                                        <!-- capacity effect -->
+                                        <div class="flex w-fit items-center">
+                                             <span>
+                                                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                       xmlns="http://www.w3.org/2000/svg">
+                                                       <path d="M5.25008 1.16666C3.72175 1.16666 2.47925 2.40916 2.47925 3.93749C2.47925 5.43666 3.65175 6.64999 5.18008 6.70249C5.22675 6.69666 5.27341 6.69666 5.30841 6.70249C5.32008 6.70249 5.32591 6.70249 5.33758 6.70249C5.34341 6.70249 5.34341 6.70249 5.34925 6.70249C6.84258 6.64999 8.01508 5.43666 8.02091 3.93749C8.02091 2.40916 6.77841 1.16666 5.25008 1.16666Z"
+                                                            fill="#90A3BF" />
+                                                       <path d="M8.21331 8.25418C6.58581 7.16918 3.93164 7.16918 2.29248 8.25418C1.55164 8.75001 1.14331 9.42085 1.14331 10.1383C1.14331 10.8558 1.55164 11.5208 2.28664 12.0108C3.10331 12.5592 4.17664 12.8333 5.24998 12.8333C6.32331 12.8333 7.39664 12.5592 8.21331 12.0108C8.94831 11.515 9.35664 10.85 9.35664 10.1267C9.35081 9.40918 8.94831 8.74418 8.21331 8.25418Z"
+                                                            fill="#90A3BF" />
+                                                       <path d="M11.6607 4.28165C11.754 5.41332 10.949 6.40499 9.83488 6.53915C9.82905 6.53915 9.82905 6.53915 9.82321 6.53915H9.80571C9.77071 6.53915 9.73571 6.53915 9.70655 6.55082C9.14071 6.57999 8.62155 6.39915 8.23071 6.06665C8.83155 5.52999 9.17571 4.72499 9.10571 3.84999C9.06488 3.37749 8.90155 2.94582 8.65655 2.57832C8.87821 2.46749 9.13488 2.39749 9.39738 2.37415C10.5407 2.27499 11.5615 3.12665 11.6607 4.28165Z"
+                                                            fill="#90A3BF" />
+                                                       <path d="M12.8276 9.67751C12.7809 10.2433 12.4192 10.7333 11.8126 11.0658C11.2292 11.3867 10.4942 11.5383 9.76506 11.5208C10.1851 11.1417 10.4301 10.6692 10.4767 10.1675C10.5351 9.44417 10.1909 8.75001 9.50256 8.19584C9.11172 7.88667 8.65672 7.64167 8.16089 7.46084C9.45006 7.08751 11.0717 7.33834 12.0692 8.14334C12.6059 8.57501 12.8801 9.11751 12.8276 9.67751Z"
+                                                            fill="#90A3BF" />
+                                                  </svg>
+
+
+
+
+                                             </span>
+                                             <p class="text-12 font-medium text-secondary-300 ml-1 lg:text-12">4 People
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <!-- pay section -->
+                                   <div class="flex flex-wrap w-full items-center">
+                                        <div class="flex flex-1 gap-1 items-center">
+                                             <div class="flex flex-col">
+                                                  <p class="text-secondary-500 text-16 font-bold">$96.00/
+
+
+                                                       <span class="text-secondary-300 text-12 font-bold ">day</span>
+
+                                                  </p>
+                                                  <p class="text-secondary-300 text-12 font-bold line-through">$120.00/
+                                                  </p>
+                                             </div>
+                                        </div>
+                                        <div class="flex flex-1"> <button
+                                                  class="w-full h-fit px-2 py-2 bg-primary-500 text-white font-semibold text-12 rounded-md whitespace-nowrap">Rental
+                                                  Now</button></div>
+
+                                   </div>
+                              </figcaption>
+
+
+                         </figure>
+                         <!-- item Product -->
+                         <figure class="flex flex-1 flex-col bg-white shadow-def rounded-xl p-3">
+                              <!-- wrapper One - title & like  -->
+                              <div class="flex items-center justify-between w-full">
+                                   <div class="flex flex-col">
+                                        <a href="" class="text-secondary-500  text-16 font-semibold">Nissan GT - R</a>
+                                        <span class="font-medium text-12 text-secondary-300 mt-1">Sprts</span>
+                                   </div>
+                                   <!-- heart Icon -->
+                                   <span class="cursor-pointer">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                                  stroke="#90A3BF" stroke-width="1.5" stroke-linecap="round"
+                                                  stroke-linejoin="round" />
+                                        </svg>
+
+
+                                   </span>
+                              </div>
+
+                              <figcaption class="w-full flex flex-col">
+                                   <!-- imgae product -->
+                                   <div class="w-full h-fit mt-7 ">
+
+                                        <img src="./src/image/carItem01.png" class="mx-auto !w-[180px] !h-[56px]"
+                                             alt="">
+                                   </div>
+
+                                   <!-- detail product -->
+                                   <div class="flex flex-row w-full justify-between my-10">
+
+                                        <!-- gasoline effect -->
+                                        <div class="flex w-fit items-center ">
+                                             <span>
+                                                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                       xmlns="http://www.w3.org/2000/svg">
+                                                       <path d="M13.0317 5.44249L11.8651 4.85916C11.6492 4.75416 11.3809 4.83582 11.2759 5.05166C11.1651 5.27332 11.2526 5.53582 11.4684 5.64082L12.3959 6.10166V8.89582L10.2084 8.90166V2.91666C10.2084 1.74999 9.42675 1.16666 8.45841 1.16666H3.79175C2.82341 1.16666 2.04175 1.74999 2.04175 2.91666V12.3958H1.16675C0.927581 12.3958 0.729248 12.5942 0.729248 12.8333C0.729248 13.0725 0.927581 13.2708 1.16675 13.2708H11.0834C11.3226 13.2708 11.5209 13.0725 11.5209 12.8333C11.5209 12.5942 11.3226 12.3958 11.0834 12.3958H10.2084V9.77666L12.8334 9.77082C13.0784 9.77082 13.2709 9.57249 13.2709 9.33332V5.83332C13.2709 5.66999 13.1776 5.51832 13.0317 5.44249ZM3.50008 4.01916C3.50008 3.20832 3.99591 2.91666 4.60258 2.91666H7.65341C8.25425 2.91666 8.75008 3.20832 8.75008 4.01916V4.73666C8.75008 5.54166 8.25425 5.83332 7.64758 5.83332H4.60258C3.99591 5.83332 3.50008 5.54166 3.50008 4.73082V4.01916ZM3.79175 7.14582H5.54175C5.78091 7.14582 5.97925 7.34416 5.97925 7.58332C5.97925 7.82249 5.78091 8.02082 5.54175 8.02082H3.79175C3.55258 8.02082 3.35425 7.82249 3.35425 7.58332C3.35425 7.34416 3.55258 7.14582 3.79175 7.14582Z"
+                                                            fill="#90A3BF" />
+                                                  </svg>
+
+
+
+                                             </span>
+                                             <p class="text-14 font-medium text-secondary-300 ml-1 lg:text-12">80L</p>
+                                        </div>
+
+                                        <!-- car effect -->
+                                        <div class="flex w-fit items-center">
+                                             <span>
+                                                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                       xmlns="http://www.w3.org/2000/svg">
+                                                       <path d="M7 1C3.688 1 1 3.688 1 7C1 10.312 3.688 13 7 13C10.312 13 13 10.312 13 7C13 3.688 10.318 1 7 1Z"
+                                                            fill="#90A3BF" />
+                                                       <rect x="2" y="2" width="10" height="10" rx="5" fill="white" />
+                                                       <path d="M7 3C4.792 3 3 4.792 3 7C3 9.208 4.792 11 7 11C9.208 11 11 9.208 11 7C11 4.792 9.212 3 7 3Z"
+                                                            fill="#90A3BF" />
+                                                       <rect x="8" y="6" width="4" height="2" fill="#90A3BF" />
+                                                       <rect x="2" y="6" width="4" height="2" fill="#90A3BF" />
+                                                       <rect x="6" y="8" width="2" height="4" fill="#90A3BF" />
+                                                       <rect x="4" y="4" width="6" height="6" rx="3" fill="white" />
+                                                  </svg>
+
+
+
+                                             </span>
+                                             <p class="text-14 font-medium text-secondary-300 ml-1 lg:text-12">Manual
+                                             </p>
+                                        </div>
+
+                                        <!-- capacity effect -->
+                                        <div class="flex w-fit items-center">
+                                             <span>
+                                                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                       xmlns="http://www.w3.org/2000/svg">
+                                                       <path d="M5.25008 1.16666C3.72175 1.16666 2.47925 2.40916 2.47925 3.93749C2.47925 5.43666 3.65175 6.64999 5.18008 6.70249C5.22675 6.69666 5.27341 6.69666 5.30841 6.70249C5.32008 6.70249 5.32591 6.70249 5.33758 6.70249C5.34341 6.70249 5.34341 6.70249 5.34925 6.70249C6.84258 6.64999 8.01508 5.43666 8.02091 3.93749C8.02091 2.40916 6.77841 1.16666 5.25008 1.16666Z"
+                                                            fill="#90A3BF" />
+                                                       <path d="M8.21331 8.25418C6.58581 7.16918 3.93164 7.16918 2.29248 8.25418C1.55164 8.75001 1.14331 9.42085 1.14331 10.1383C1.14331 10.8558 1.55164 11.5208 2.28664 12.0108C3.10331 12.5592 4.17664 12.8333 5.24998 12.8333C6.32331 12.8333 7.39664 12.5592 8.21331 12.0108C8.94831 11.515 9.35664 10.85 9.35664 10.1267C9.35081 9.40918 8.94831 8.74418 8.21331 8.25418Z"
+                                                            fill="#90A3BF" />
+                                                       <path d="M11.6607 4.28165C11.754 5.41332 10.949 6.40499 9.83488 6.53915C9.82905 6.53915 9.82905 6.53915 9.82321 6.53915H9.80571C9.77071 6.53915 9.73571 6.53915 9.70655 6.55082C9.14071 6.57999 8.62155 6.39915 8.23071 6.06665C8.83155 5.52999 9.17571 4.72499 9.10571 3.84999C9.06488 3.37749 8.90155 2.94582 8.65655 2.57832C8.87821 2.46749 9.13488 2.39749 9.39738 2.37415C10.5407 2.27499 11.5615 3.12665 11.6607 4.28165Z"
+                                                            fill="#90A3BF" />
+                                                       <path d="M12.8276 9.67751C12.7809 10.2433 12.4192 10.7333 11.8126 11.0658C11.2292 11.3867 10.4942 11.5383 9.76506 11.5208C10.1851 11.1417 10.4301 10.6692 10.4767 10.1675C10.5351 9.44417 10.1909 8.75001 9.50256 8.19584C9.11172 7.88667 8.65672 7.64167 8.16089 7.46084C9.45006 7.08751 11.0717 7.33834 12.0692 8.14334C12.6059 8.57501 12.8801 9.11751 12.8276 9.67751Z"
+                                                            fill="#90A3BF" />
+                                                  </svg>
+
+
+
+
+                                             </span>
+                                             <p class="text-14 font-medium text-secondary-300 ml-1 lg:text-12">8 People
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <!-- pay section -->
+                                   <div class="flex flex-wrap w-full items-center">
+                                        <div class="flex flex-1 gap-1 items-center">
+                                             <div class="flex flex-col">
+                                                  <p class="text-secondary-500 text-16 font-bold">$96.00/
+
+
+                                                       <span class="text-secondary-300 text-12 font-bold ">day</span>
+
+                                                  </p>
+                                                  <p class="text-secondary-300 text-12 font-bold line-through">$120.00/
+                                                  </p>
+                                             </div>
+                                        </div>
+                                        <div class="flex flex-1"> <button
+                                                  class="w-full h-fit px-2 py-2 bg-primary-500 text-white font-semibold text-12 rounded-md whitespace-nowrap">Rental
+                                                  Now</button></div>
+
+                                   </div>
+                              </figcaption>
+
+
+                         </figure>
+
+                    </div>
+               </div>
+          </section>
+
+
+          <!-- Recomendation Car -->
+          <section class="flex flex-col gap-5 w-full my-10">
+               <!-- title bar -->
+               <div class="w-full flex justify-between">
+                    <p class="text-16 font-semibold text-secondary-300">Recomendation Car</p>
+                    <p class="text-16 font-semibold text-primary-500">Veiw All</p>
+               </div>
+
+               <!-- wrappeer Product -->
+               <div class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  2xl:grid-cols-5
+                      justify-between gap-10 ">
+
+                    <!-- item Product -->
+                    <figure class="flex flex-[1_1_200px] flex-col bg-white shadow-def rounded-xl p-5 overflow-hidden">
+                         <!-- wrapper One - title & like  -->
+                         <div class="flex items-center justify-between w-full">
+                              <div class="flex flex-col">
+                                   <a href="" class="text-secondary-500  text-16 font-semibold">All New Rush</a>
+                                   <span class="font-medium text-12 text-secondary-300 mt-1">SUV</span>
+                              </div>
+                              <!-- heart Icon -->
+                              <span class="cursor-pointer">
+                                   <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.44 0.0999756C12.63 0.0999756 11.01 0.979976 10 2.32998C8.99 0.979976 7.37 0.0999756 5.56 0.0999756C2.49 0.0999756 0 2.59998 0 5.68998C0 6.87998 0.19 7.97998 0.52 8.99998C2.1 14 6.97 16.99 9.38 17.81C9.72 17.93 10.28 17.93 10.62 17.81C13.03 16.99 17.9 14 19.48 8.99998C19.81 7.97998 20 6.87998 20 5.68998C20 2.59998 17.51 0.0999756 14.44 0.0999756Z"
+                                             fill="#ED3F3F" />
+                                   </svg>
+
+                              </span>
+                         </div>
+
+                         <figcaption class="w-full flex flex-row md:flex-col items-center">
+                              <!-- imgae product -->
+                              <div class="w-full h-fit mt-7 ">
+
+                                   <img src="./src/image/carItemR1.png" class="mx-auto !w-[170px] !h-[70px]" alt="">
+                              </div>
+
+                              <!-- detail product -->
+                              <div
+                                   class="flex flex-col w-full justify-end items-end gap-3 md:justify-between my-10 md:flex-row">
+
+                                   <!-- gasoline effect -->
+                                   <div class="flex w-fit items-center ">
+                                        <span>
+                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M13.0317 5.44249L11.8651 4.85916C11.6492 4.75416 11.3809 4.83582 11.2759 5.05166C11.1651 5.27332 11.2526 5.53582 11.4684 5.64082L12.3959 6.10166V8.89582L10.2084 8.90166V2.91666C10.2084 1.74999 9.42675 1.16666 8.45841 1.16666H3.79175C2.82341 1.16666 2.04175 1.74999 2.04175 2.91666V12.3958H1.16675C0.927581 12.3958 0.729248 12.5942 0.729248 12.8333C0.729248 13.0725 0.927581 13.2708 1.16675 13.2708H11.0834C11.3226 13.2708 11.5209 13.0725 11.5209 12.8333C11.5209 12.5942 11.3226 12.3958 11.0834 12.3958H10.2084V9.77666L12.8334 9.77082C13.0784 9.77082 13.2709 9.57249 13.2709 9.33332V5.83332C13.2709 5.66999 13.1776 5.51832 13.0317 5.44249ZM3.50008 4.01916C3.50008 3.20832 3.99591 2.91666 4.60258 2.91666H7.65341C8.25425 2.91666 8.75008 3.20832 8.75008 4.01916V4.73666C8.75008 5.54166 8.25425 5.83332 7.64758 5.83332H4.60258C3.99591 5.83332 3.50008 5.54166 3.50008 4.73082V4.01916ZM3.79175 7.14582H5.54175C5.78091 7.14582 5.97925 7.34416 5.97925 7.58332C5.97925 7.82249 5.78091 8.02082 5.54175 8.02082H3.79175C3.55258 8.02082 3.35425 7.82249 3.35425 7.58332C3.35425 7.34416 3.55258 7.14582 3.79175 7.14582Z"
+                                                       fill="#90A3BF" />
+                                             </svg>
+
+
+
+                                        </span>
+                                        <p class="text-14 font-medium text-secondary-300 ml-1 lg:text-12">70L</p>
+                                   </div>
+
+                                   <!-- car effect -->
+                                   <div class="flex w-fit items-center">
+                                        <span>
+                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M7 1C3.688 1 1 3.688 1 7C1 10.312 3.688 13 7 13C10.312 13 13 10.312 13 7C13 3.688 10.318 1 7 1Z"
+                                                       fill="#90A3BF" />
+                                                  <rect x="2" y="2" width="10" height="10" rx="5" fill="white" />
+                                                  <path d="M7 3C4.792 3 3 4.792 3 7C3 9.208 4.792 11 7 11C9.208 11 11 9.208 11 7C11 4.792 9.212 3 7 3Z"
+                                                       fill="#90A3BF" />
+                                                  <rect x="8" y="6" width="4" height="2" fill="#90A3BF" />
+                                                  <rect x="2" y="6" width="4" height="2" fill="#90A3BF" />
+                                                  <rect x="6" y="8" width="2" height="4" fill="#90A3BF" />
+                                                  <rect x="4" y="4" width="6" height="6" rx="3" fill="white" />
+                                             </svg>
+
+
+
+                                        </span>
+                                        <p class="text-14 font-medium text-secondary-300 ml-1 lg:text-12">Manual
+                                        </p>
+                                   </div>
+
+                                   <!-- capacity effect -->
+                                   <div class="flex w-fit items-center">
+                                        <span>
+                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M5.25008 1.16666C3.72175 1.16666 2.47925 2.40916 2.47925 3.93749C2.47925 5.43666 3.65175 6.64999 5.18008 6.70249C5.22675 6.69666 5.27341 6.69666 5.30841 6.70249C5.32008 6.70249 5.32591 6.70249 5.33758 6.70249C5.34341 6.70249 5.34341 6.70249 5.34925 6.70249C6.84258 6.64999 8.01508 5.43666 8.02091 3.93749C8.02091 2.40916 6.77841 1.16666 5.25008 1.16666Z"
+                                                       fill="#90A3BF" />
+                                                  <path d="M8.21331 8.25418C6.58581 7.16918 3.93164 7.16918 2.29248 8.25418C1.55164 8.75001 1.14331 9.42085 1.14331 10.1383C1.14331 10.8558 1.55164 11.5208 2.28664 12.0108C3.10331 12.5592 4.17664 12.8333 5.24998 12.8333C6.32331 12.8333 7.39664 12.5592 8.21331 12.0108C8.94831 11.515 9.35664 10.85 9.35664 10.1267C9.35081 9.40918 8.94831 8.74418 8.21331 8.25418Z"
+                                                       fill="#90A3BF" />
+                                                  <path d="M11.6607 4.28165C11.754 5.41332 10.949 6.40499 9.83488 6.53915C9.82905 6.53915 9.82905 6.53915 9.82321 6.53915H9.80571C9.77071 6.53915 9.73571 6.53915 9.70655 6.55082C9.14071 6.57999 8.62155 6.39915 8.23071 6.06665C8.83155 5.52999 9.17571 4.72499 9.10571 3.84999C9.06488 3.37749 8.90155 2.94582 8.65655 2.57832C8.87821 2.46749 9.13488 2.39749 9.39738 2.37415C10.5407 2.27499 11.5615 3.12665 11.6607 4.28165Z"
+                                                       fill="#90A3BF" />
+                                                  <path d="M12.8276 9.67751C12.7809 10.2433 12.4192 10.7333 11.8126 11.0658C11.2292 11.3867 10.4942 11.5383 9.76506 11.5208C10.1851 11.1417 10.4301 10.6692 10.4767 10.1675C10.5351 9.44417 10.1909 8.75001 9.50256 8.19584C9.11172 7.88667 8.65672 7.64167 8.16089 7.46084C9.45006 7.08751 11.0717 7.33834 12.0692 8.14334C12.6059 8.57501 12.8801 9.11751 12.8276 9.67751Z"
+                                                       fill="#90A3BF" />
+                                             </svg>
+
+
+
+
+                                        </span>
+                                        <p class="text-14 font-medium text-secondary-300 ml-1 lg:text-12">6 People
+                                        </p>
+                                   </div>
+                              </div>
+                         </figcaption>
+
+
+                         <!-- pay section -->
+                         <div class="flex flex-wrap w-full items-center">
+                              <div class="flex flex-1 gap-1 items-center">
+                                   <span class="text-secondary-500 text-16 font-bold">$72.00/</span>
+                                   <span class="text-secondary-300 text-12 font-bold">day</span>
+                              </div>
+                              <div class="flex flex-1"> <button
+                                        class="w-full h-fit px-2 py-2 bg-primary-500 text-white font-semibold text-12 rounded-md whitespace-nowrap">Rental
+                                        Now</button></div>
+
+                         </div>
+                    </figure>
+
+                    <!-- item Product -->
+                    <figure class="flex flex-[1_1_200px] flex-col bg-white shadow-def rounded-xl p-5 overflow-hidden">
+                         <!-- wrapper One - title & like  -->
+                         <div class="flex items-center justify-between w-full">
+                              <div class="flex flex-col">
+                                   <a href="" class="text-secondary-500  text-16 font-semibold">CR - V</a>
+                                   <span class="font-medium text-12 text-secondary-300 mt-1">SUV</span>
+                              </div>
+                              <!-- heart Icon -->
+                              <span class="cursor-pointer">
+                                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                             stroke="#90A3BF" stroke-width="1.5" stroke-linecap="round"
+                                             stroke-linejoin="round" />
+                                   </svg>
+
+
+                              </span>
+                         </div>
+
+                         <figcaption class="w-full flex flex-row md:flex-col items-center">
+                              <!-- imgae product -->
+                              <div class="w-full h-fit mt-7 ">
+
+                                   <img src="./src/image/carItemR2.png" class="mx-auto !w-[170px] !h-[70px]" alt="">
+                              </div>
+
+                              <!-- detail product -->
+                              <div
+                                   class="flex flex-col w-full justify-end items-end gap-3 md:justify-between my-10 md:flex-row">
+
+                                   <!-- gasoline effect -->
+                                   <div class="flex w-fit items-center ">
+                                        <span>
+                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M13.0317 5.44249L11.8651 4.85916C11.6492 4.75416 11.3809 4.83582 11.2759 5.05166C11.1651 5.27332 11.2526 5.53582 11.4684 5.64082L12.3959 6.10166V8.89582L10.2084 8.90166V2.91666C10.2084 1.74999 9.42675 1.16666 8.45841 1.16666H3.79175C2.82341 1.16666 2.04175 1.74999 2.04175 2.91666V12.3958H1.16675C0.927581 12.3958 0.729248 12.5942 0.729248 12.8333C0.729248 13.0725 0.927581 13.2708 1.16675 13.2708H11.0834C11.3226 13.2708 11.5209 13.0725 11.5209 12.8333C11.5209 12.5942 11.3226 12.3958 11.0834 12.3958H10.2084V9.77666L12.8334 9.77082C13.0784 9.77082 13.2709 9.57249 13.2709 9.33332V5.83332C13.2709 5.66999 13.1776 5.51832 13.0317 5.44249ZM3.50008 4.01916C3.50008 3.20832 3.99591 2.91666 4.60258 2.91666H7.65341C8.25425 2.91666 8.75008 3.20832 8.75008 4.01916V4.73666C8.75008 5.54166 8.25425 5.83332 7.64758 5.83332H4.60258C3.99591 5.83332 3.50008 5.54166 3.50008 4.73082V4.01916ZM3.79175 7.14582H5.54175C5.78091 7.14582 5.97925 7.34416 5.97925 7.58332C5.97925 7.82249 5.78091 8.02082 5.54175 8.02082H3.79175C3.55258 8.02082 3.35425 7.82249 3.35425 7.58332C3.35425 7.34416 3.55258 7.14582 3.79175 7.14582Z"
+                                                       fill="#90A3BF" />
+                                             </svg>
+
+
+
+                                        </span>
+                                        <p class="text-14 font-medium text-secondary-300 ml-1 lg:text-12">80L</p>
+                                   </div>
+
+                                   <!-- car effect -->
+                                   <div class="flex w-fit items-center">
+                                        <span>
+                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M7 1C3.688 1 1 3.688 1 7C1 10.312 3.688 13 7 13C10.312 13 13 10.312 13 7C13 3.688 10.318 1 7 1Z"
+                                                       fill="#90A3BF" />
+                                                  <rect x="2" y="2" width="10" height="10" rx="5" fill="white" />
+                                                  <path d="M7 3C4.792 3 3 4.792 3 7C3 9.208 4.792 11 7 11C9.208 11 11 9.208 11 7C11 4.792 9.212 3 7 3Z"
+                                                       fill="#90A3BF" />
+                                                  <rect x="8" y="6" width="4" height="2" fill="#90A3BF" />
+                                                  <rect x="2" y="6" width="4" height="2" fill="#90A3BF" />
+                                                  <rect x="6" y="8" width="2" height="4" fill="#90A3BF" />
+                                                  <rect x="4" y="4" width="6" height="6" rx="3" fill="white" />
+                                             </svg>
+
+
+
+                                        </span>
+                                        <p class="text-14 font-medium text-secondary-300 ml-1 lg:text-12">Manual
+                                        </p>
+                                   </div>
+
+                                   <!-- capacity effect -->
+                                   <div class="flex w-fit items-center">
+                                        <span>
+                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M5.25008 1.16666C3.72175 1.16666 2.47925 2.40916 2.47925 3.93749C2.47925 5.43666 3.65175 6.64999 5.18008 6.70249C5.22675 6.69666 5.27341 6.69666 5.30841 6.70249C5.32008 6.70249 5.32591 6.70249 5.33758 6.70249C5.34341 6.70249 5.34341 6.70249 5.34925 6.70249C6.84258 6.64999 8.01508 5.43666 8.02091 3.93749C8.02091 2.40916 6.77841 1.16666 5.25008 1.16666Z"
+                                                       fill="#90A3BF" />
+                                                  <path d="M8.21331 8.25418C6.58581 7.16918 3.93164 7.16918 2.29248 8.25418C1.55164 8.75001 1.14331 9.42085 1.14331 10.1383C1.14331 10.8558 1.55164 11.5208 2.28664 12.0108C3.10331 12.5592 4.17664 12.8333 5.24998 12.8333C6.32331 12.8333 7.39664 12.5592 8.21331 12.0108C8.94831 11.515 9.35664 10.85 9.35664 10.1267C9.35081 9.40918 8.94831 8.74418 8.21331 8.25418Z"
+                                                       fill="#90A3BF" />
+                                                  <path d="M11.6607 4.28165C11.754 5.41332 10.949 6.40499 9.83488 6.53915C9.82905 6.53915 9.82905 6.53915 9.82321 6.53915H9.80571C9.77071 6.53915 9.73571 6.53915 9.70655 6.55082C9.14071 6.57999 8.62155 6.39915 8.23071 6.06665C8.83155 5.52999 9.17571 4.72499 9.10571 3.84999C9.06488 3.37749 8.90155 2.94582 8.65655 2.57832C8.87821 2.46749 9.13488 2.39749 9.39738 2.37415C10.5407 2.27499 11.5615 3.12665 11.6607 4.28165Z"
+                                                       fill="#90A3BF" />
+                                                  <path d="M12.8276 9.67751C12.7809 10.2433 12.4192 10.7333 11.8126 11.0658C11.2292 11.3867 10.4942 11.5383 9.76506 11.5208C10.1851 11.1417 10.4301 10.6692 10.4767 10.1675C10.5351 9.44417 10.1909 8.75001 9.50256 8.19584C9.11172 7.88667 8.65672 7.64167 8.16089 7.46084C9.45006 7.08751 11.0717 7.33834 12.0692 8.14334C12.6059 8.57501 12.8801 9.11751 12.8276 9.67751Z"
+                                                       fill="#90A3BF" />
+                                             </svg>
+
+
+
+
+                                        </span>
+                                        <p class="text-14 font-medium text-secondary-300 ml-1 lg:text-12">2 People
+                                        </p>
+                                   </div>
+                              </div>
+                         </figcaption>
+                         <!-- pay section -->
+                         <div class="flex flex-wrap w-full items-center">
+                              <div class="flex flex-1 gap-1 items-center">
+                                   <div class="flex flex-col">
+                                        <p class="text-secondary-500 text-16 font-bold">$80.00/
+
+
+                                             <span class="text-secondary-300 text-12 font-bold ">day</span>
+
+                                        </p>
+                                        <p class="text-secondary-300 text-12 font-bold line-through">$100.00/
+                                        </p>
+                                   </div>
+                              </div>
+                              <div class="flex flex-1"> <button
+                                        class="w-full h-fit px-2 py-2 bg-primary-500 text-white font-semibold text-12 rounded-md whitespace-nowrap">Rental
+                                        Now</button></div>
+
+                         </div>
+
+
+                    </figure>
+
+                    <!-- item Product -->
+                    <figure class="flex flex-[1_1_200px] flex-col bg-white shadow-def rounded-xl p-5 overflow-hidden">
+                         <!-- wrapper One - title & like  -->
+                         <div class="flex items-center justify-between w-full">
+                              <div class="flex flex-col">
+                                   <a href="" class="text-secondary-500  text-16 font-semibold">All New Terios</a>
+                                   <span class="font-medium text-12 text-secondary-300 mt-1">Sedan</span>
+                              </div>
+                              <!-- heart Icon -->
+                              <span class="cursor-pointer">
+                                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.44 3.09998C14.63 3.09998 13.01 3.97998 12 5.32998C10.99 3.97998 9.37 3.09998 7.56 3.09998C4.49 3.09998 2 5.59998 2 8.68998C2 9.87998 2.19 10.98 2.52 12C4.1 17 8.97 19.99 11.38 20.81C11.72 20.93 12.28 20.93 12.62 20.81C15.03 19.99 19.9 17 21.48 12C21.81 10.98 22 9.87998 22 8.68998C22 5.59998 19.51 3.09998 16.44 3.09998Z"
+                                             fill="#ED3F3F" />
+                                   </svg>
+
+
+
+                              </span>
+                         </div>
+
+                         <figcaption class="w-full flex flex-row md:flex-col items-center">
+                              <!-- imgae product -->
+                              <div class="w-full h-fit mt-7 ">
+
+                                   <img src="./src/image/carItemR3.png" class="mx-auto !w-[170px] !h-[70px]" alt="">
+                              </div>
+
+                              <!-- detail product -->
+                              <div
+                                   class="flex flex-col w-full justify-end items-end gap-3 md:justify-between my-10 md:flex-row">
+
+                                   <!-- gasoline effect -->
+                                   <div class="flex w-fit items-center ">
+                                        <span>
+                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M13.0317 5.44249L11.8651 4.85916C11.6492 4.75416 11.3809 4.83582 11.2759 5.05166C11.1651 5.27332 11.2526 5.53582 11.4684 5.64082L12.3959 6.10166V8.89582L10.2084 8.90166V2.91666C10.2084 1.74999 9.42675 1.16666 8.45841 1.16666H3.79175C2.82341 1.16666 2.04175 1.74999 2.04175 2.91666V12.3958H1.16675C0.927581 12.3958 0.729248 12.5942 0.729248 12.8333C0.729248 13.0725 0.927581 13.2708 1.16675 13.2708H11.0834C11.3226 13.2708 11.5209 13.0725 11.5209 12.8333C11.5209 12.5942 11.3226 12.3958 11.0834 12.3958H10.2084V9.77666L12.8334 9.77082C13.0784 9.77082 13.2709 9.57249 13.2709 9.33332V5.83332C13.2709 5.66999 13.1776 5.51832 13.0317 5.44249ZM3.50008 4.01916C3.50008 3.20832 3.99591 2.91666 4.60258 2.91666H7.65341C8.25425 2.91666 8.75008 3.20832 8.75008 4.01916V4.73666C8.75008 5.54166 8.25425 5.83332 7.64758 5.83332H4.60258C3.99591 5.83332 3.50008 5.54166 3.50008 4.73082V4.01916ZM3.79175 7.14582H5.54175C5.78091 7.14582 5.97925 7.34416 5.97925 7.58332C5.97925 7.82249 5.78091 8.02082 5.54175 8.02082H3.79175C3.55258 8.02082 3.35425 7.82249 3.35425 7.58332C3.35425 7.34416 3.55258 7.14582 3.79175 7.14582Z"
+                                                       fill="#90A3BF" />
+                                             </svg>
+
+
+
+                                        </span>
+                                        <p class="text-14 font-medium text-secondary-300 ml-1 lg:text-12">70L</p>
+                                   </div>
+
+                                   <!-- car effect -->
+                                   <div class="flex w-fit items-center">
+                                        <span>
+                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M7 1C3.688 1 1 3.688 1 7C1 10.312 3.688 13 7 13C10.312 13 13 10.312 13 7C13 3.688 10.318 1 7 1Z"
+                                                       fill="#90A3BF" />
+                                                  <rect x="2" y="2" width="10" height="10" rx="5" fill="white" />
+                                                  <path d="M7 3C4.792 3 3 4.792 3 7C3 9.208 4.792 11 7 11C9.208 11 11 9.208 11 7C11 4.792 9.212 3 7 3Z"
+                                                       fill="#90A3BF" />
+                                                  <rect x="8" y="6" width="4" height="2" fill="#90A3BF" />
+                                                  <rect x="2" y="6" width="4" height="2" fill="#90A3BF" />
+                                                  <rect x="6" y="8" width="2" height="4" fill="#90A3BF" />
+                                                  <rect x="4" y="4" width="6" height="6" rx="3" fill="white" />
+                                             </svg>
+
+
+
+                                        </span>
+                                        <p class="text-14 font-medium text-secondary-300 ml-1 lg:text-12">Manual
+                                        </p>
+                                   </div>
+
+                                   <!-- capacity effect -->
+                                   <div class="flex w-fit items-center">
+                                        <span>
+                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M5.25008 1.16666C3.72175 1.16666 2.47925 2.40916 2.47925 3.93749C2.47925 5.43666 3.65175 6.64999 5.18008 6.70249C5.22675 6.69666 5.27341 6.69666 5.30841 6.70249C5.32008 6.70249 5.32591 6.70249 5.33758 6.70249C5.34341 6.70249 5.34341 6.70249 5.34925 6.70249C6.84258 6.64999 8.01508 5.43666 8.02091 3.93749C8.02091 2.40916 6.77841 1.16666 5.25008 1.16666Z"
+                                                       fill="#90A3BF" />
+                                                  <path d="M8.21331 8.25418C6.58581 7.16918 3.93164 7.16918 2.29248 8.25418C1.55164 8.75001 1.14331 9.42085 1.14331 10.1383C1.14331 10.8558 1.55164 11.5208 2.28664 12.0108C3.10331 12.5592 4.17664 12.8333 5.24998 12.8333C6.32331 12.8333 7.39664 12.5592 8.21331 12.0108C8.94831 11.515 9.35664 10.85 9.35664 10.1267C9.35081 9.40918 8.94831 8.74418 8.21331 8.25418Z"
+                                                       fill="#90A3BF" />
+                                                  <path d="M11.6607 4.28165C11.754 5.41332 10.949 6.40499 9.83488 6.53915C9.82905 6.53915 9.82905 6.53915 9.82321 6.53915H9.80571C9.77071 6.53915 9.73571 6.53915 9.70655 6.55082C9.14071 6.57999 8.62155 6.39915 8.23071 6.06665C8.83155 5.52999 9.17571 4.72499 9.10571 3.84999C9.06488 3.37749 8.90155 2.94582 8.65655 2.57832C8.87821 2.46749 9.13488 2.39749 9.39738 2.37415C10.5407 2.27499 11.5615 3.12665 11.6607 4.28165Z"
+                                                       fill="#90A3BF" />
+                                                  <path d="M12.8276 9.67751C12.7809 10.2433 12.4192 10.7333 11.8126 11.0658C11.2292 11.3867 10.4942 11.5383 9.76506 11.5208C10.1851 11.1417 10.4301 10.6692 10.4767 10.1675C10.5351 9.44417 10.1909 8.75001 9.50256 8.19584C9.11172 7.88667 8.65672 7.64167 8.16089 7.46084C9.45006 7.08751 11.0717 7.33834 12.0692 8.14334C12.6059 8.57501 12.8801 9.11751 12.8276 9.67751Z"
+                                                       fill="#90A3BF" />
+                                             </svg>
+
+
+
+
+                                        </span>
+                                        <p class="text-14 font-medium text-secondary-300 ml-1 lg:text-12">4 People
+                                        </p>
+                                   </div>
+                              </div>
+                         </figcaption>
+                         <!-- pay section -->
+                         <div class="flex flex-wrap w-full items-center">
+                              <div class="flex flex-1 gap-1 items-center">
+                                   <div class="flex flex-col">
+                                        <p class="text-secondary-500 text-16 font-bold">$96.00/
+
+
+                                             <span class="text-secondary-300 text-12 font-bold ">day</span>
+
+                                        </p>
+                                        <p class="text-secondary-300 text-12 font-bold line-through">$120.00/
+                                        </p>
+                                   </div>
+                              </div>
+                              <div class="flex flex-1"> <button
+                                        class="w-full h-fit px-2 py-2 bg-primary-500 text-white font-semibold text-12 rounded-md whitespace-nowrap">Rental
+                                        Now</button></div>
+
+                         </div>
+
+
+                    </figure>
+
+                    <!-- item Product -->
+                    <figure class="flex flex-[1_1_200px] flex-col bg-white shadow-def rounded-xl p-5 overflow-hidden">
+                         <!-- wrapper One - title & like  -->
+                         <div class="flex items-center justify-between w-full">
+                              <div class="flex flex-col">
+                                   <a href="" class="text-secondary-500  text-16 font-semibold">CR - V</a>
+                                   <span class="font-medium text-12 text-secondary-300 mt-1">Sprts</span>
+                              </div>
+                              <!-- heart Icon -->
+                              <span class="cursor-pointer">
+                                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                             stroke="#90A3BF" stroke-width="1.5" stroke-linecap="round"
+                                             stroke-linejoin="round" />
+                                   </svg>
+
+
+                              </span>
+                         </div>
+
+                         <figcaption class="w-full flex flex-row md:flex-col items-center">
+                              <!-- imgae product -->
+                              <div class="w-full h-fit mt-7 ">
+
+                                   <img src="./src/image/carItemR4.png" class="mx-auto !w-[170px] !h-[70px]" alt="">
+                              </div>
+
+                              <!-- detail product -->
+                              <div
+                                   class="flex flex-col w-full justify-end items-end gap-3 md:justify-between my-10 md:flex-row">
+
+                                   <!-- gasoline effect -->
+                                   <div class="flex w-fit items-center ">
+                                        <span>
+                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M13.0317 5.44249L11.8651 4.85916C11.6492 4.75416 11.3809 4.83582 11.2759 5.05166C11.1651 5.27332 11.2526 5.53582 11.4684 5.64082L12.3959 6.10166V8.89582L10.2084 8.90166V2.91666C10.2084 1.74999 9.42675 1.16666 8.45841 1.16666H3.79175C2.82341 1.16666 2.04175 1.74999 2.04175 2.91666V12.3958H1.16675C0.927581 12.3958 0.729248 12.5942 0.729248 12.8333C0.729248 13.0725 0.927581 13.2708 1.16675 13.2708H11.0834C11.3226 13.2708 11.5209 13.0725 11.5209 12.8333C11.5209 12.5942 11.3226 12.3958 11.0834 12.3958H10.2084V9.77666L12.8334 9.77082C13.0784 9.77082 13.2709 9.57249 13.2709 9.33332V5.83332C13.2709 5.66999 13.1776 5.51832 13.0317 5.44249ZM3.50008 4.01916C3.50008 3.20832 3.99591 2.91666 4.60258 2.91666H7.65341C8.25425 2.91666 8.75008 3.20832 8.75008 4.01916V4.73666C8.75008 5.54166 8.25425 5.83332 7.64758 5.83332H4.60258C3.99591 5.83332 3.50008 5.54166 3.50008 4.73082V4.01916ZM3.79175 7.14582H5.54175C5.78091 7.14582 5.97925 7.34416 5.97925 7.58332C5.97925 7.82249 5.78091 8.02082 5.54175 8.02082H3.79175C3.55258 8.02082 3.35425 7.82249 3.35425 7.58332C3.35425 7.34416 3.55258 7.14582 3.79175 7.14582Z"
+                                                       fill="#90A3BF" />
+                                             </svg>
+
+
+
+                                        </span>
+                                        <p class="text-14 font-medium text-secondary-300 ml-1 lg:text-12">80L</p>
+                                   </div>
+
+                                   <!-- car effect -->
+                                   <div class="flex w-fit items-center">
+                                        <span>
+                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M7 1C3.688 1 1 3.688 1 7C1 10.312 3.688 13 7 13C10.312 13 13 10.312 13 7C13 3.688 10.318 1 7 1Z"
+                                                       fill="#90A3BF" />
+                                                  <rect x="2" y="2" width="10" height="10" rx="5" fill="white" />
+                                                  <path d="M7 3C4.792 3 3 4.792 3 7C3 9.208 4.792 11 7 11C9.208 11 11 9.208 11 7C11 4.792 9.212 3 7 3Z"
+                                                       fill="#90A3BF" />
+                                                  <rect x="8" y="6" width="4" height="2" fill="#90A3BF" />
+                                                  <rect x="2" y="6" width="4" height="2" fill="#90A3BF" />
+                                                  <rect x="6" y="8" width="2" height="4" fill="#90A3BF" />
+                                                  <rect x="4" y="4" width="6" height="6" rx="3" fill="white" />
+                                             </svg>
+
+
+
+                                        </span>
+                                        <p class="text-14 font-medium text-secondary-300 ml-1 lg:text-12">Manual
+                                        </p>
+                                   </div>
+
+                                   <!-- capacity effect -->
+                                   <div class="flex w-fit items-center">
+                                        <span>
+                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M5.25008 1.16666C3.72175 1.16666 2.47925 2.40916 2.47925 3.93749C2.47925 5.43666 3.65175 6.64999 5.18008 6.70249C5.22675 6.69666 5.27341 6.69666 5.30841 6.70249C5.32008 6.70249 5.32591 6.70249 5.33758 6.70249C5.34341 6.70249 5.34341 6.70249 5.34925 6.70249C6.84258 6.64999 8.01508 5.43666 8.02091 3.93749C8.02091 2.40916 6.77841 1.16666 5.25008 1.16666Z"
+                                                       fill="#90A3BF" />
+                                                  <path d="M8.21331 8.25418C6.58581 7.16918 3.93164 7.16918 2.29248 8.25418C1.55164 8.75001 1.14331 9.42085 1.14331 10.1383C1.14331 10.8558 1.55164 11.5208 2.28664 12.0108C3.10331 12.5592 4.17664 12.8333 5.24998 12.8333C6.32331 12.8333 7.39664 12.5592 8.21331 12.0108C8.94831 11.515 9.35664 10.85 9.35664 10.1267C9.35081 9.40918 8.94831 8.74418 8.21331 8.25418Z"
+                                                       fill="#90A3BF" />
+                                                  <path d="M11.6607 4.28165C11.754 5.41332 10.949 6.40499 9.83488 6.53915C9.82905 6.53915 9.82905 6.53915 9.82321 6.53915H9.80571C9.77071 6.53915 9.73571 6.53915 9.70655 6.55082C9.14071 6.57999 8.62155 6.39915 8.23071 6.06665C8.83155 5.52999 9.17571 4.72499 9.10571 3.84999C9.06488 3.37749 8.90155 2.94582 8.65655 2.57832C8.87821 2.46749 9.13488 2.39749 9.39738 2.37415C10.5407 2.27499 11.5615 3.12665 11.6607 4.28165Z"
+                                                       fill="#90A3BF" />
+                                                  <path d="M12.8276 9.67751C12.7809 10.2433 12.4192 10.7333 11.8126 11.0658C11.2292 11.3867 10.4942 11.5383 9.76506 11.5208C10.1851 11.1417 10.4301 10.6692 10.4767 10.1675C10.5351 9.44417 10.1909 8.75001 9.50256 8.19584C9.11172 7.88667 8.65672 7.64167 8.16089 7.46084C9.45006 7.08751 11.0717 7.33834 12.0692 8.14334C12.6059 8.57501 12.8801 9.11751 12.8276 9.67751Z"
+                                                       fill="#90A3BF" />
+                                             </svg>
+
+
+
+
+                                        </span>
+                                        <p class="text-14 font-medium text-secondary-300 ml-1 lg:text-12">8 People
+                                        </p>
+                                   </div>
+                              </div>
+                         </figcaption>
+                         <!-- pay section -->
+                         <div class="flex flex-wrap w-full items-center">
+                              <div class="flex flex-1 gap-1 items-center">
+                                   <div class="flex flex-col">
+                                        <p class="text-secondary-500 text-16 font-bold">$96.00/
+
+
+                                             <span class="text-secondary-300 text-12 font-bold ">day</span>
+
+                                        </p>
+                                        <p class="text-secondary-300 text-12 font-bold line-through">$120.00/
+                                        </p>
+                                   </div>
+                              </div>
+                              <div class="flex flex-1"> <button
+                                        class="w-full h-fit px-2 py-2 bg-primary-500 text-white font-semibold text-12 rounded-md whitespace-nowrap">Rental
+                                        Now</button></div>
+
+                         </div>
+
+
+                    </figure>
+
+                    <!-- item Product -->
+                    <figure class="flex flex-[1_1_200px] flex-col bg-white shadow-def rounded-xl p-5 overflow-hidden">
+                         <!-- wrapper One - title & like  -->
+                         <div class="flex items-center justify-between w-full">
+                              <div class="flex flex-col">
+                                   <a href="" class="text-secondary-500  text-16 font-semibold">Nissan GT - R</a>
+                                   <span class="font-medium text-12 text-secondary-300 mt-1">Sprts</span>
+                              </div>
+                              <!-- heart Icon -->
+                              <span class="cursor-pointer">
+                                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                             stroke="#90A3BF" stroke-width="1.5" stroke-linecap="round"
+                                             stroke-linejoin="round" />
+                                   </svg>
+
+
+                              </span>
+                         </div>
+
+                         <figcaption class="w-full flex flex-row md:flex-col items-center">
+                              <!-- imgae product -->
+                              <div class="w-full h-fit mt-7 ">
+
+                                   <img src="./src/image/carItemR2.png" class="mx-auto !w-[170px] !h-[70px]" alt="">
+                              </div>
+
+                              <!-- detail product -->
+                              <div
+                                   class="flex flex-col w-full justify-end items-end gap-3 md:justify-between my-10 md:flex-row">
+
+                                   <!-- gasoline effect -->
+                                   <div class="flex w-fit items-center ">
+                                        <span>
+                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M13.0317 5.44249L11.8651 4.85916C11.6492 4.75416 11.3809 4.83582 11.2759 5.05166C11.1651 5.27332 11.2526 5.53582 11.4684 5.64082L12.3959 6.10166V8.89582L10.2084 8.90166V2.91666C10.2084 1.74999 9.42675 1.16666 8.45841 1.16666H3.79175C2.82341 1.16666 2.04175 1.74999 2.04175 2.91666V12.3958H1.16675C0.927581 12.3958 0.729248 12.5942 0.729248 12.8333C0.729248 13.0725 0.927581 13.2708 1.16675 13.2708H11.0834C11.3226 13.2708 11.5209 13.0725 11.5209 12.8333C11.5209 12.5942 11.3226 12.3958 11.0834 12.3958H10.2084V9.77666L12.8334 9.77082C13.0784 9.77082 13.2709 9.57249 13.2709 9.33332V5.83332C13.2709 5.66999 13.1776 5.51832 13.0317 5.44249ZM3.50008 4.01916C3.50008 3.20832 3.99591 2.91666 4.60258 2.91666H7.65341C8.25425 2.91666 8.75008 3.20832 8.75008 4.01916V4.73666C8.75008 5.54166 8.25425 5.83332 7.64758 5.83332H4.60258C3.99591 5.83332 3.50008 5.54166 3.50008 4.73082V4.01916ZM3.79175 7.14582H5.54175C5.78091 7.14582 5.97925 7.34416 5.97925 7.58332C5.97925 7.82249 5.78091 8.02082 5.54175 8.02082H3.79175C3.55258 8.02082 3.35425 7.82249 3.35425 7.58332C3.35425 7.34416 3.55258 7.14582 3.79175 7.14582Z"
+                                                       fill="#90A3BF" />
+                                             </svg>
+
+
+
+                                        </span>
+                                        <p class="text-14 font-medium text-secondary-300 ml-1 lg:text-12">80L</p>
+                                   </div>
+
+                                   <!-- car effect -->
+                                   <div class="flex w-fit items-center">
+                                        <span>
+                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M7 1C3.688 1 1 3.688 1 7C1 10.312 3.688 13 7 13C10.312 13 13 10.312 13 7C13 3.688 10.318 1 7 1Z"
+                                                       fill="#90A3BF" />
+                                                  <rect x="2" y="2" width="10" height="10" rx="5" fill="white" />
+                                                  <path d="M7 3C4.792 3 3 4.792 3 7C3 9.208 4.792 11 7 11C9.208 11 11 9.208 11 7C11 4.792 9.212 3 7 3Z"
+                                                       fill="#90A3BF" />
+                                                  <rect x="8" y="6" width="4" height="2" fill="#90A3BF" />
+                                                  <rect x="2" y="6" width="4" height="2" fill="#90A3BF" />
+                                                  <rect x="6" y="8" width="2" height="4" fill="#90A3BF" />
+                                                  <rect x="4" y="4" width="6" height="6" rx="3" fill="white" />
+                                             </svg>
+
+
+
+                                        </span>
+                                        <p class="text-14 font-medium text-secondary-300 ml-1 lg:text-12">Manual
+                                        </p>
+                                   </div>
+
+                                   <!-- capacity effect -->
+                                   <div class="flex w-fit items-center">
+                                        <span>
+                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M5.25008 1.16666C3.72175 1.16666 2.47925 2.40916 2.47925 3.93749C2.47925 5.43666 3.65175 6.64999 5.18008 6.70249C5.22675 6.69666 5.27341 6.69666 5.30841 6.70249C5.32008 6.70249 5.32591 6.70249 5.33758 6.70249C5.34341 6.70249 5.34341 6.70249 5.34925 6.70249C6.84258 6.64999 8.01508 5.43666 8.02091 3.93749C8.02091 2.40916 6.77841 1.16666 5.25008 1.16666Z"
+                                                       fill="#90A3BF" />
+                                                  <path d="M8.21331 8.25418C6.58581 7.16918 3.93164 7.16918 2.29248 8.25418C1.55164 8.75001 1.14331 9.42085 1.14331 10.1383C1.14331 10.8558 1.55164 11.5208 2.28664 12.0108C3.10331 12.5592 4.17664 12.8333 5.24998 12.8333C6.32331 12.8333 7.39664 12.5592 8.21331 12.0108C8.94831 11.515 9.35664 10.85 9.35664 10.1267C9.35081 9.40918 8.94831 8.74418 8.21331 8.25418Z"
+                                                       fill="#90A3BF" />
+                                                  <path d="M11.6607 4.28165C11.754 5.41332 10.949 6.40499 9.83488 6.53915C9.82905 6.53915 9.82905 6.53915 9.82321 6.53915H9.80571C9.77071 6.53915 9.73571 6.53915 9.70655 6.55082C9.14071 6.57999 8.62155 6.39915 8.23071 6.06665C8.83155 5.52999 9.17571 4.72499 9.10571 3.84999C9.06488 3.37749 8.90155 2.94582 8.65655 2.57832C8.87821 2.46749 9.13488 2.39749 9.39738 2.37415C10.5407 2.27499 11.5615 3.12665 11.6607 4.28165Z"
+                                                       fill="#90A3BF" />
+                                                  <path d="M12.8276 9.67751C12.7809 10.2433 12.4192 10.7333 11.8126 11.0658C11.2292 11.3867 10.4942 11.5383 9.76506 11.5208C10.1851 11.1417 10.4301 10.6692 10.4767 10.1675C10.5351 9.44417 10.1909 8.75001 9.50256 8.19584C9.11172 7.88667 8.65672 7.64167 8.16089 7.46084C9.45006 7.08751 11.0717 7.33834 12.0692 8.14334C12.6059 8.57501 12.8801 9.11751 12.8276 9.67751Z"
+                                                       fill="#90A3BF" />
+                                             </svg>
+
+
+
+
+                                        </span>
+                                        <p class="text-14 font-medium text-secondary-300 ml-1 lg:text-12">8 People
+                                        </p>
+                                   </div>
+                              </div>
+                         </figcaption>
+                         <!-- pay section -->
+                         <div class="flex flex-wrap w-full items-center">
+                              <div class="flex flex-1 gap-1 items-center">
+                                   <div class="flex flex-col">
+                                        <p class="text-secondary-500 text-16 font-bold">$96.00/
+
+
+                                             <span class="text-secondary-300 text-12 font-bold ">day</span>
+
+                                        </p>
+                                        <p class="text-secondary-300 text-12 font-bold line-through">$120.00/
+                                        </p>
+                                   </div>
+                              </div>
+                              <div class="flex flex-1"> <button
+                                        class="w-full h-fit px-2 py-2 bg-primary-500 text-white font-semibold text-12 rounded-md whitespace-nowrap">Rental
+                                        Now</button></div>
+
+                         </div>
+
+
+                    </figure>
+
+
+                    <!-- item Product -->
+                    <figure class="flex flex-[1_1_200px] flex-col bg-white shadow-def rounded-xl p-5 overflow-hidden">
+                         <!-- wrapper One - title & like  -->
+                         <div class="flex items-center justify-between w-full">
+                              <div class="flex flex-col">
+                                   <a href="" class="text-secondary-500  text-16 font-semibold">New MG ZS</a>
+                                   <span class="font-medium text-12 text-secondary-300 mt-1">Sports</span>
+                              </div>
+                              <!-- heart Icon -->
+                              <span class="cursor-pointer">
+                                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                             stroke="#90A3BF" stroke-width="1.5" stroke-linecap="round"
+                                             stroke-linejoin="round" />
+                                   </svg>
+
+
+                              </span>
+                         </div>
+
+                         <figcaption class="w-full flex flex-row md:flex-col items-center">
+                              <!-- imgae product -->
+                              <div class="w-full h-fit mt-7 ">
+
+                                   <img src="./src/image/carItemR5.png" class="mx-auto !w-[170px] !h-[70px]" alt="">
+                              </div>
+
+                              <!-- detail product -->
+                              <div
+                                   class="flex flex-col w-full justify-end items-end gap-3 md:justify-between my-10 md:flex-row">
+
+                                   <!-- gasoline effect -->
+                                   <div class="flex w-fit items-center ">
+                                        <span>
+                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M13.0317 5.44249L11.8651 4.85916C11.6492 4.75416 11.3809 4.83582 11.2759 5.05166C11.1651 5.27332 11.2526 5.53582 11.4684 5.64082L12.3959 6.10166V8.89582L10.2084 8.90166V2.91666C10.2084 1.74999 9.42675 1.16666 8.45841 1.16666H3.79175C2.82341 1.16666 2.04175 1.74999 2.04175 2.91666V12.3958H1.16675C0.927581 12.3958 0.729248 12.5942 0.729248 12.8333C0.729248 13.0725 0.927581 13.2708 1.16675 13.2708H11.0834C11.3226 13.2708 11.5209 13.0725 11.5209 12.8333C11.5209 12.5942 11.3226 12.3958 11.0834 12.3958H10.2084V9.77666L12.8334 9.77082C13.0784 9.77082 13.2709 9.57249 13.2709 9.33332V5.83332C13.2709 5.66999 13.1776 5.51832 13.0317 5.44249ZM3.50008 4.01916C3.50008 3.20832 3.99591 2.91666 4.60258 2.91666H7.65341C8.25425 2.91666 8.75008 3.20832 8.75008 4.01916V4.73666C8.75008 5.54166 8.25425 5.83332 7.64758 5.83332H4.60258C3.99591 5.83332 3.50008 5.54166 3.50008 4.73082V4.01916ZM3.79175 7.14582H5.54175C5.78091 7.14582 5.97925 7.34416 5.97925 7.58332C5.97925 7.82249 5.78091 8.02082 5.54175 8.02082H3.79175C3.55258 8.02082 3.35425 7.82249 3.35425 7.58332C3.35425 7.34416 3.55258 7.14582 3.79175 7.14582Z"
+                                                       fill="#90A3BF" />
+                                             </svg>
+
+
+
+                                        </span>
+                                        <p class="text-14 font-medium text-secondary-300 ml-1 lg:text-12">80L</p>
+                                   </div>
+
+                                   <!-- car effect -->
+                                   <div class="flex w-fit items-center">
+                                        <span>
+                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M7 1C3.688 1 1 3.688 1 7C1 10.312 3.688 13 7 13C10.312 13 13 10.312 13 7C13 3.688 10.318 1 7 1Z"
+                                                       fill="#90A3BF" />
+                                                  <rect x="2" y="2" width="10" height="10" rx="5" fill="white" />
+                                                  <path d="M7 3C4.792 3 3 4.792 3 7C3 9.208 4.792 11 7 11C9.208 11 11 9.208 11 7C11 4.792 9.212 3 7 3Z"
+                                                       fill="#90A3BF" />
+                                                  <rect x="8" y="6" width="4" height="2" fill="#90A3BF" />
+                                                  <rect x="2" y="6" width="4" height="2" fill="#90A3BF" />
+                                                  <rect x="6" y="8" width="2" height="4" fill="#90A3BF" />
+                                                  <rect x="4" y="4" width="6" height="6" rx="3" fill="white" />
+                                             </svg>
+
+
+
+                                        </span>
+                                        <p class="text-14 font-medium text-secondary-300 ml-1 lg:text-12">Manual
+                                        </p>
+                                   </div>
+
+                                   <!-- capacity effect -->
+                                   <div class="flex w-fit items-center">
+                                        <span>
+                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M5.25008 1.16666C3.72175 1.16666 2.47925 2.40916 2.47925 3.93749C2.47925 5.43666 3.65175 6.64999 5.18008 6.70249C5.22675 6.69666 5.27341 6.69666 5.30841 6.70249C5.32008 6.70249 5.32591 6.70249 5.33758 6.70249C5.34341 6.70249 5.34341 6.70249 5.34925 6.70249C6.84258 6.64999 8.01508 5.43666 8.02091 3.93749C8.02091 2.40916 6.77841 1.16666 5.25008 1.16666Z"
+                                                       fill="#90A3BF" />
+                                                  <path d="M8.21331 8.25418C6.58581 7.16918 3.93164 7.16918 2.29248 8.25418C1.55164 8.75001 1.14331 9.42085 1.14331 10.1383C1.14331 10.8558 1.55164 11.5208 2.28664 12.0108C3.10331 12.5592 4.17664 12.8333 5.24998 12.8333C6.32331 12.8333 7.39664 12.5592 8.21331 12.0108C8.94831 11.515 9.35664 10.85 9.35664 10.1267C9.35081 9.40918 8.94831 8.74418 8.21331 8.25418Z"
+                                                       fill="#90A3BF" />
+                                                  <path d="M11.6607 4.28165C11.754 5.41332 10.949 6.40499 9.83488 6.53915C9.82905 6.53915 9.82905 6.53915 9.82321 6.53915H9.80571C9.77071 6.53915 9.73571 6.53915 9.70655 6.55082C9.14071 6.57999 8.62155 6.39915 8.23071 6.06665C8.83155 5.52999 9.17571 4.72499 9.10571 3.84999C9.06488 3.37749 8.90155 2.94582 8.65655 2.57832C8.87821 2.46749 9.13488 2.39749 9.39738 2.37415C10.5407 2.27499 11.5615 3.12665 11.6607 4.28165Z"
+                                                       fill="#90A3BF" />
+                                                  <path d="M12.8276 9.67751C12.7809 10.2433 12.4192 10.7333 11.8126 11.0658C11.2292 11.3867 10.4942 11.5383 9.76506 11.5208C10.1851 11.1417 10.4301 10.6692 10.4767 10.1675C10.5351 9.44417 10.1909 8.75001 9.50256 8.19584C9.11172 7.88667 8.65672 7.64167 8.16089 7.46084C9.45006 7.08751 11.0717 7.33834 12.0692 8.14334C12.6059 8.57501 12.8801 9.11751 12.8276 9.67751Z"
+                                                       fill="#90A3BF" />
+                                             </svg>
+
+
+
+
+                                        </span>
+                                        <p class="text-14 font-medium text-secondary-300 ml-1 lg:text-12">8 People
+                                        </p>
+                                   </div>
+                              </div>
+                         </figcaption>
+                         <!-- pay section -->
+                         <div class="flex flex-wrap w-full items-center">
+                              <div class="flex flex-1 gap-1 items-center">
+                                   <div class="flex flex-col">
+                                        <p class="text-secondary-500 text-16 font-bold">$96.00/
+
+
+                                             <span class="text-secondary-300 text-12 font-bold ">day</span>
+
+                                        </p>
+                                        <p class="text-secondary-300 text-12 font-bold line-through">$120.00/
+                                        </p>
+                                   </div>
+                              </div>
+                              <div class="flex flex-1"> <button
+                                        class="w-full h-fit px-2 py-2 bg-primary-500 text-white font-semibold text-12 rounded-md whitespace-nowrap">Rental
+                                        Now</button></div>
+
+                         </div>
+
+
+                    </figure>
+
+                    <!-- item Product -->
+                    <figure class="flex flex-[1_1_200px] flex-col bg-white shadow-def rounded-xl p-5 overflow-hidden">
+                         <!-- wrapper One - title & like  -->
+                         <div class="flex items-center justify-between w-full">
+                              <div class="flex flex-col">
+                                   <a href="" class="text-secondary-500  text-16 font-semibold">MG ZX Excite</a>
+                                   <span class="font-medium text-12 text-secondary-300 mt-1">Hatchback</span>
+                              </div>
+                              <!-- heart Icon -->
+                              <span class="cursor-pointer">
+                                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                             stroke="#90A3BF" stroke-width="1.5" stroke-linecap="round"
+                                             stroke-linejoin="round" />
+                                   </svg>
+
+
+                              </span>
+                         </div>
+
+                         <figcaption class="w-full flex flex-row md:flex-col items-center">
+                              <!-- imgae product -->
+                              <div class="w-full h-fit mt-7 ">
+
+                                   <img src="./src/image/carItemR6.png" class="mx-auto !w-[170px] !h-[70px]" alt="">
+                              </div>
+
+                              <!-- detail product -->
+                              <div
+                                   class="flex flex-col w-full justify-end items-end gap-3 md:justify-between my-10 md:flex-row">
+
+                                   <!-- gasoline effect -->
+                                   <div class="flex w-fit items-center ">
+                                        <span>
+                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M13.0317 5.44249L11.8651 4.85916C11.6492 4.75416 11.3809 4.83582 11.2759 5.05166C11.1651 5.27332 11.2526 5.53582 11.4684 5.64082L12.3959 6.10166V8.89582L10.2084 8.90166V2.91666C10.2084 1.74999 9.42675 1.16666 8.45841 1.16666H3.79175C2.82341 1.16666 2.04175 1.74999 2.04175 2.91666V12.3958H1.16675C0.927581 12.3958 0.729248 12.5942 0.729248 12.8333C0.729248 13.0725 0.927581 13.2708 1.16675 13.2708H11.0834C11.3226 13.2708 11.5209 13.0725 11.5209 12.8333C11.5209 12.5942 11.3226 12.3958 11.0834 12.3958H10.2084V9.77666L12.8334 9.77082C13.0784 9.77082 13.2709 9.57249 13.2709 9.33332V5.83332C13.2709 5.66999 13.1776 5.51832 13.0317 5.44249ZM3.50008 4.01916C3.50008 3.20832 3.99591 2.91666 4.60258 2.91666H7.65341C8.25425 2.91666 8.75008 3.20832 8.75008 4.01916V4.73666C8.75008 5.54166 8.25425 5.83332 7.64758 5.83332H4.60258C3.99591 5.83332 3.50008 5.54166 3.50008 4.73082V4.01916ZM3.79175 7.14582H5.54175C5.78091 7.14582 5.97925 7.34416 5.97925 7.58332C5.97925 7.82249 5.78091 8.02082 5.54175 8.02082H3.79175C3.55258 8.02082 3.35425 7.82249 3.35425 7.58332C3.35425 7.34416 3.55258 7.14582 3.79175 7.14582Z"
+                                                       fill="#90A3BF" />
+                                             </svg>
+
+
+
+                                        </span>
+                                        <p class="text-14 font-medium text-secondary-300 ml-1 lg:text-12">120L</p>
+                                   </div>
+
+                                   <!-- car effect -->
+                                   <div class="flex w-fit items-center">
+                                        <span>
+                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M7 1C3.688 1 1 3.688 1 7C1 10.312 3.688 13 7 13C10.312 13 13 10.312 13 7C13 3.688 10.318 1 7 1Z"
+                                                       fill="#90A3BF" />
+                                                  <rect x="2" y="2" width="10" height="10" rx="5" fill="white" />
+                                                  <path d="M7 3C4.792 3 3 4.792 3 7C3 9.208 4.792 11 7 11C9.208 11 11 9.208 11 7C11 4.792 9.212 3 7 3Z"
+                                                       fill="#90A3BF" />
+                                                  <rect x="8" y="6" width="4" height="2" fill="#90A3BF" />
+                                                  <rect x="2" y="6" width="4" height="2" fill="#90A3BF" />
+                                                  <rect x="6" y="8" width="2" height="4" fill="#90A3BF" />
+                                                  <rect x="4" y="4" width="6" height="6" rx="3" fill="white" />
+                                             </svg>
+
+
+
+                                        </span>
+                                        <p class="text-14 font-medium text-secondary-300 ml-1 lg:text-12">Manual
+                                        </p>
+                                   </div>
+
+                                   <!-- capacity effect -->
+                                   <div class="flex w-fit items-center">
+                                        <span>
+                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M5.25008 1.16666C3.72175 1.16666 2.47925 2.40916 2.47925 3.93749C2.47925 5.43666 3.65175 6.64999 5.18008 6.70249C5.22675 6.69666 5.27341 6.69666 5.30841 6.70249C5.32008 6.70249 5.32591 6.70249 5.33758 6.70249C5.34341 6.70249 5.34341 6.70249 5.34925 6.70249C6.84258 6.64999 8.01508 5.43666 8.02091 3.93749C8.02091 2.40916 6.77841 1.16666 5.25008 1.16666Z"
+                                                       fill="#90A3BF" />
+                                                  <path d="M8.21331 8.25418C6.58581 7.16918 3.93164 7.16918 2.29248 8.25418C1.55164 8.75001 1.14331 9.42085 1.14331 10.1383C1.14331 10.8558 1.55164 11.5208 2.28664 12.0108C3.10331 12.5592 4.17664 12.8333 5.24998 12.8333C6.32331 12.8333 7.39664 12.5592 8.21331 12.0108C8.94831 11.515 9.35664 10.85 9.35664 10.1267C9.35081 9.40918 8.94831 8.74418 8.21331 8.25418Z"
+                                                       fill="#90A3BF" />
+                                                  <path d="M11.6607 4.28165C11.754 5.41332 10.949 6.40499 9.83488 6.53915C9.82905 6.53915 9.82905 6.53915 9.82321 6.53915H9.80571C9.77071 6.53915 9.73571 6.53915 9.70655 6.55082C9.14071 6.57999 8.62155 6.39915 8.23071 6.06665C8.83155 5.52999 9.17571 4.72499 9.10571 3.84999C9.06488 3.37749 8.90155 2.94582 8.65655 2.57832C8.87821 2.46749 9.13488 2.39749 9.39738 2.37415C10.5407 2.27499 11.5615 3.12665 11.6607 4.28165Z"
+                                                       fill="#90A3BF" />
+                                                  <path d="M12.8276 9.67751C12.7809 10.2433 12.4192 10.7333 11.8126 11.0658C11.2292 11.3867 10.4942 11.5383 9.76506 11.5208C10.1851 11.1417 10.4301 10.6692 10.4767 10.1675C10.5351 9.44417 10.1909 8.75001 9.50256 8.19584C9.11172 7.88667 8.65672 7.64167 8.16089 7.46084C9.45006 7.08751 11.0717 7.33834 12.0692 8.14334C12.6059 8.57501 12.8801 9.11751 12.8276 9.67751Z"
+                                                       fill="#90A3BF" />
+                                             </svg>
+
+
+
+
+                                        </span>
+                                        <p class="text-14 font-medium text-secondary-300 ml-1 lg:text-12">8 People
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- pay section -->
+                         </figcaption>
+                         <div class="flex flex-wrap w-full items-center">
+                              <div class="flex flex-1 gap-1 items-center">
+                                   <div class="flex flex-col">
+                                        <p class="text-secondary-500 text-16 font-bold">$200.00/
+
+
+                                             <span class="text-secondary-300 text-12 font-bold ">day</span>
+
+                                        </p>
+
+                                        </p>
+                                   </div>
+                              </div>
+                              <div class="flex flex-1"> <button
+                                        class="w-full h-fit px-2 py-2 bg-primary-500 text-white font-semibold text-12 rounded-md whitespace-nowrap">Rental
+                                        Now</button></div>
+
+                         </div>
+
+
+                    </figure>
+
+
+                    <!-- item Product -->
+                    <figure class="flex flex-[1_1_200px] flex-col bg-white shadow-def rounded-xl p-5 overflow-hidden">
+                         <!-- wrapper One - title & like  -->
+                         <div class="flex items-center justify-between w-full">
+                              <div class="flex flex-col">
+                                   <a href="" class="text-secondary-500  text-16 font-semibold">New MG ZS</a>
+                                   <span class="font-medium text-12 text-secondary-300 mt-1">Sedan</span>
+                              </div>
+                              <!-- heart Icon -->
+                              <span class="cursor-pointer">
+                                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.44 3.09998C14.63 3.09998 13.01 3.97998 12 5.32998C10.99 3.97998 9.37 3.09998 7.56 3.09998C4.49 3.09998 2 5.59998 2 8.68998C2 9.87998 2.19 10.98 2.52 12C4.1 17 8.97 19.99 11.38 20.81C11.72 20.93 12.28 20.93 12.62 20.81C15.03 19.99 19.9 17 21.48 12C21.81 10.98 22 9.87998 22 8.68998C22 5.59998 19.51 3.09998 16.44 3.09998Z"
+                                             fill="#ED3F3F" />
+                                   </svg>
+
+
+
+                              </span>
+                         </div>
+
+                         <figcaption class="w-full flex flex-row md:flex-col items-center">
+                              <!-- imgae product -->
+                              <div class="w-full h-fit mt-7 ">
+
+                                   <img src="./src/image/carItemR7.png" class=" !w-[170px] !h-[70px]" alt="">
+                              </div>
+
+                              <!-- detail product -->
+                              <div
+                                   class="flex flex-col w-full justify-end items-end gap-3 md:justify-between my-10 md:flex-row">
+
+                                   <!-- gasoline effect -->
+                                   <div class="flex w-fit items-center ">
+                                        <span>
+                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M13.0317 5.44249L11.8651 4.85916C11.6492 4.75416 11.3809 4.83582 11.2759 5.05166C11.1651 5.27332 11.2526 5.53582 11.4684 5.64082L12.3959 6.10166V8.89582L10.2084 8.90166V2.91666C10.2084 1.74999 9.42675 1.16666 8.45841 1.16666H3.79175C2.82341 1.16666 2.04175 1.74999 2.04175 2.91666V12.3958H1.16675C0.927581 12.3958 0.729248 12.5942 0.729248 12.8333C0.729248 13.0725 0.927581 13.2708 1.16675 13.2708H11.0834C11.3226 13.2708 11.5209 13.0725 11.5209 12.8333C11.5209 12.5942 11.3226 12.3958 11.0834 12.3958H10.2084V9.77666L12.8334 9.77082C13.0784 9.77082 13.2709 9.57249 13.2709 9.33332V5.83332C13.2709 5.66999 13.1776 5.51832 13.0317 5.44249ZM3.50008 4.01916C3.50008 3.20832 3.99591 2.91666 4.60258 2.91666H7.65341C8.25425 2.91666 8.75008 3.20832 8.75008 4.01916V4.73666C8.75008 5.54166 8.25425 5.83332 7.64758 5.83332H4.60258C3.99591 5.83332 3.50008 5.54166 3.50008 4.73082V4.01916ZM3.79175 7.14582H5.54175C5.78091 7.14582 5.97925 7.34416 5.97925 7.58332C5.97925 7.82249 5.78091 8.02082 5.54175 8.02082H3.79175C3.55258 8.02082 3.35425 7.82249 3.35425 7.58332C3.35425 7.34416 3.55258 7.14582 3.79175 7.14582Z"
+                                                       fill="#90A3BF" />
+                                             </svg>
+
+
+
+                                        </span>
+                                        <p class="text-14 font-medium text-secondary-300 ml-1 lg:text-12">70L</p>
+                                   </div>
+
+                                   <!-- car effect -->
+                                   <div class="flex w-fit items-center">
+                                        <span>
+                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M7 1C3.688 1 1 3.688 1 7C1 10.312 3.688 13 7 13C10.312 13 13 10.312 13 7C13 3.688 10.318 1 7 1Z"
+                                                       fill="#90A3BF" />
+                                                  <rect x="2" y="2" width="10" height="10" rx="5" fill="white" />
+                                                  <path d="M7 3C4.792 3 3 4.792 3 7C3 9.208 4.792 11 7 11C9.208 11 11 9.208 11 7C11 4.792 9.212 3 7 3Z"
+                                                       fill="#90A3BF" />
+                                                  <rect x="8" y="6" width="4" height="2" fill="#90A3BF" />
+                                                  <rect x="2" y="6" width="4" height="2" fill="#90A3BF" />
+                                                  <rect x="6" y="8" width="2" height="4" fill="#90A3BF" />
+                                                  <rect x="4" y="4" width="6" height="6" rx="3" fill="white" />
+                                             </svg>
+
+
+
+                                        </span>
+                                        <p class="text-14 font-medium text-secondary-300 ml-1 lg:text-12">Manual
+                                        </p>
+                                   </div>
+
+                                   <!-- capacity effect -->
+                                   <div class="flex w-fit items-center">
+                                        <span>
+                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M5.25008 1.16666C3.72175 1.16666 2.47925 2.40916 2.47925 3.93749C2.47925 5.43666 3.65175 6.64999 5.18008 6.70249C5.22675 6.69666 5.27341 6.69666 5.30841 6.70249C5.32008 6.70249 5.32591 6.70249 5.33758 6.70249C5.34341 6.70249 5.34341 6.70249 5.34925 6.70249C6.84258 6.64999 8.01508 5.43666 8.02091 3.93749C8.02091 2.40916 6.77841 1.16666 5.25008 1.16666Z"
+                                                       fill="#90A3BF" />
+                                                  <path d="M8.21331 8.25418C6.58581 7.16918 3.93164 7.16918 2.29248 8.25418C1.55164 8.75001 1.14331 9.42085 1.14331 10.1383C1.14331 10.8558 1.55164 11.5208 2.28664 12.0108C3.10331 12.5592 4.17664 12.8333 5.24998 12.8333C6.32331 12.8333 7.39664 12.5592 8.21331 12.0108C8.94831 11.515 9.35664 10.85 9.35664 10.1267C9.35081 9.40918 8.94831 8.74418 8.21331 8.25418Z"
+                                                       fill="#90A3BF" />
+                                                  <path d="M11.6607 4.28165C11.754 5.41332 10.949 6.40499 9.83488 6.53915C9.82905 6.53915 9.82905 6.53915 9.82321 6.53915H9.80571C9.77071 6.53915 9.73571 6.53915 9.70655 6.55082C9.14071 6.57999 8.62155 6.39915 8.23071 6.06665C8.83155 5.52999 9.17571 4.72499 9.10571 3.84999C9.06488 3.37749 8.90155 2.94582 8.65655 2.57832C8.87821 2.46749 9.13488 2.39749 9.39738 2.37415C10.5407 2.27499 11.5615 3.12665 11.6607 4.28165Z"
+                                                       fill="#90A3BF" />
+                                                  <path d="M12.8276 9.67751C12.7809 10.2433 12.4192 10.7333 11.8126 11.0658C11.2292 11.3867 10.4942 11.5383 9.76506 11.5208C10.1851 11.1417 10.4301 10.6692 10.4767 10.1675C10.5351 9.44417 10.1909 8.75001 9.50256 8.19584C9.11172 7.88667 8.65672 7.64167 8.16089 7.46084C9.45006 7.08751 11.0717 7.33834 12.0692 8.14334C12.6059 8.57501 12.8801 9.11751 12.8276 9.67751Z"
+                                                       fill="#90A3BF" />
+                                             </svg>
+
+
+
+
+                                        </span>
+                                        <p class="text-14 font-medium text-secondary-300 ml-1 lg:text-12">4 People
+                                        </p>
+                                   </div>
+                              </div>
+                         </figcaption>
+                         <!-- pay section -->
+                         <div class="flex flex-wrap w-full items-center">
+                              <div class="flex flex-1 gap-1 items-center">
+                                   <div class="flex flex-col">
+                                        <p class="text-secondary-500 text-16 font-bold">$96.00/
+
+
+                                             <span class="text-secondary-300 text-12 font-bold ">day</span>
+
+                                        </p>
+                                        <p class="text-secondary-300 text-12 font-bold line-through">$120.00/
+                                        </p>
+                                   </div>
+                              </div>
+                              <div class="flex flex-1"> <button
+                                        class="w-full h-fit px-2 py-2 bg-primary-500 text-white font-semibold text-12 rounded-md whitespace-nowrap">Rental
+                                        Now</button></div>
+
+                         </div>
+
+
+                    </figure>
+
+                    <!-- item Product -->
+                    <figure class="flex flex-[1_1_200px] flex-col bg-white shadow-def rounded-xl p-5 overflow-hidden">
+                         <!-- wrapper One - title & like  -->
+                         <div class="flex items-center justify-between w-full">
+                              <div class="flex flex-col">
+                                   <a href="" class="text-secondary-500  text-16 font-semibold">MG ZX Exclusice</a>
+                                   <span class="font-medium text-12 text-secondary-300 mt-1">SUV</span>
+                              </div>
+                              <!-- heart Icon -->
+                              <span class="cursor-pointer">
+                                   <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.44 0.0999756C12.63 0.0999756 11.01 0.979976 10 2.32998C8.99 0.979976 7.37 0.0999756 5.56 0.0999756C2.49 0.0999756 0 2.59998 0 5.68998C0 6.87998 0.19 7.97998 0.52 8.99998C2.1 14 6.97 16.99 9.38 17.81C9.72 17.93 10.28 17.93 10.62 17.81C13.03 16.99 17.9 14 19.48 8.99998C19.81 7.97998 20 6.87998 20 5.68998C20 2.59998 17.51 0.0999756 14.44 0.0999756Z"
+                                             fill="#ED3F3F" />
+                                   </svg>
+
+                              </span>
+                         </div>
+
+                         <figcaption class="w-full flex flex-row md:flex-col items-center">
+                              <!-- imgae product -->
+                              <div class="w-full h-fit mt-7 ">
+
+                                   <img src="./src/image/carItemR8.png" class="mx-auto !w-[170px] !h-[70px]" alt="">
+                              </div>
+
+                              <!-- detail product -->
+                              <div
+                                   class="flex flex-col w-full justify-end items-end gap-3 md:justify-between my-10 md:flex-row">
+
+                                   <!-- gasoline effect -->
+                                   <div class="flex w-fit items-center ">
+                                        <span>
+                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M13.0317 5.44249L11.8651 4.85916C11.6492 4.75416 11.3809 4.83582 11.2759 5.05166C11.1651 5.27332 11.2526 5.53582 11.4684 5.64082L12.3959 6.10166V8.89582L10.2084 8.90166V2.91666C10.2084 1.74999 9.42675 1.16666 8.45841 1.16666H3.79175C2.82341 1.16666 2.04175 1.74999 2.04175 2.91666V12.3958H1.16675C0.927581 12.3958 0.729248 12.5942 0.729248 12.8333C0.729248 13.0725 0.927581 13.2708 1.16675 13.2708H11.0834C11.3226 13.2708 11.5209 13.0725 11.5209 12.8333C11.5209 12.5942 11.3226 12.3958 11.0834 12.3958H10.2084V9.77666L12.8334 9.77082C13.0784 9.77082 13.2709 9.57249 13.2709 9.33332V5.83332C13.2709 5.66999 13.1776 5.51832 13.0317 5.44249ZM3.50008 4.01916C3.50008 3.20832 3.99591 2.91666 4.60258 2.91666H7.65341C8.25425 2.91666 8.75008 3.20832 8.75008 4.01916V4.73666C8.75008 5.54166 8.25425 5.83332 7.64758 5.83332H4.60258C3.99591 5.83332 3.50008 5.54166 3.50008 4.73082V4.01916ZM3.79175 7.14582H5.54175C5.78091 7.14582 5.97925 7.34416 5.97925 7.58332C5.97925 7.82249 5.78091 8.02082 5.54175 8.02082H3.79175C3.55258 8.02082 3.35425 7.82249 3.35425 7.58332C3.35425 7.34416 3.55258 7.14582 3.79175 7.14582Z"
+                                                       fill="#90A3BF" />
+                                             </svg>
+
+
+
+                                        </span>
+                                        <p class="text-14 font-medium text-secondary-300 ml-1 lg:text-12">70L</p>
+                                   </div>
+
+                                   <!-- car effect -->
+                                   <div class="flex w-fit items-center">
+                                        <span>
+                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M7 1C3.688 1 1 3.688 1 7C1 10.312 3.688 13 7 13C10.312 13 13 10.312 13 7C13 3.688 10.318 1 7 1Z"
+                                                       fill="#90A3BF" />
+                                                  <rect x="2" y="2" width="10" height="10" rx="5" fill="white" />
+                                                  <path d="M7 3C4.792 3 3 4.792 3 7C3 9.208 4.792 11 7 11C9.208 11 11 9.208 11 7C11 4.792 9.212 3 7 3Z"
+                                                       fill="#90A3BF" />
+                                                  <rect x="8" y="6" width="4" height="2" fill="#90A3BF" />
+                                                  <rect x="2" y="6" width="4" height="2" fill="#90A3BF" />
+                                                  <rect x="6" y="8" width="2" height="4" fill="#90A3BF" />
+                                                  <rect x="4" y="4" width="6" height="6" rx="3" fill="white" />
+                                             </svg>
+
+
+
+                                        </span>
+                                        <p class="text-14 font-medium text-secondary-300 ml-1 lg:text-12">Manual
+                                        </p>
+                                   </div>
+
+                                   <!-- capacity effect -->
+                                   <div class="flex w-fit items-center">
+                                        <span>
+                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M5.25008 1.16666C3.72175 1.16666 2.47925 2.40916 2.47925 3.93749C2.47925 5.43666 3.65175 6.64999 5.18008 6.70249C5.22675 6.69666 5.27341 6.69666 5.30841 6.70249C5.32008 6.70249 5.32591 6.70249 5.33758 6.70249C5.34341 6.70249 5.34341 6.70249 5.34925 6.70249C6.84258 6.64999 8.01508 5.43666 8.02091 3.93749C8.02091 2.40916 6.77841 1.16666 5.25008 1.16666Z"
+                                                       fill="#90A3BF" />
+                                                  <path d="M8.21331 8.25418C6.58581 7.16918 3.93164 7.16918 2.29248 8.25418C1.55164 8.75001 1.14331 9.42085 1.14331 10.1383C1.14331 10.8558 1.55164 11.5208 2.28664 12.0108C3.10331 12.5592 4.17664 12.8333 5.24998 12.8333C6.32331 12.8333 7.39664 12.5592 8.21331 12.0108C8.94831 11.515 9.35664 10.85 9.35664 10.1267C9.35081 9.40918 8.94831 8.74418 8.21331 8.25418Z"
+                                                       fill="#90A3BF" />
+                                                  <path d="M11.6607 4.28165C11.754 5.41332 10.949 6.40499 9.83488 6.53915C9.82905 6.53915 9.82905 6.53915 9.82321 6.53915H9.80571C9.77071 6.53915 9.73571 6.53915 9.70655 6.55082C9.14071 6.57999 8.62155 6.39915 8.23071 6.06665C8.83155 5.52999 9.17571 4.72499 9.10571 3.84999C9.06488 3.37749 8.90155 2.94582 8.65655 2.57832C8.87821 2.46749 9.13488 2.39749 9.39738 2.37415C10.5407 2.27499 11.5615 3.12665 11.6607 4.28165Z"
+                                                       fill="#90A3BF" />
+                                                  <path d="M12.8276 9.67751C12.7809 10.2433 12.4192 10.7333 11.8126 11.0658C11.2292 11.3867 10.4942 11.5383 9.76506 11.5208C10.1851 11.1417 10.4301 10.6692 10.4767 10.1675C10.5351 9.44417 10.1909 8.75001 9.50256 8.19584C9.11172 7.88667 8.65672 7.64167 8.16089 7.46084C9.45006 7.08751 11.0717 7.33834 12.0692 8.14334C12.6059 8.57501 12.8801 9.11751 12.8276 9.67751Z"
+                                                       fill="#90A3BF" />
+                                             </svg>
+
+
+
+
+                                        </span>
+                                        <p class="text-14 font-medium text-secondary-300 ml-1 lg:text-12">6 People
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- pay section -->
+                         </figcaption>
+                         <div class="flex flex-wrap w-full items-center">
+                              <div class="flex flex-1 gap-1 items-center">
+                                   <span class="text-secondary-500 text-16 font-bold">$72.00/</span>
+                                   <span class="text-secondary-300 text-12 font-bold">day</span>
+                              </div>
+                              <div class="flex flex-1"> <button
+                                        class="w-full h-fit px-2 py-2 bg-primary-500 text-white font-semibold text-12 rounded-md whitespace-nowrap">Rental
+                                        Now</button></div>
+
+                         </div>
+
+
+                    </figure>
+
+                    <!-- item Product -->
+                    <figure class="flex flex-[1_1_200px] flex-col bg-white shadow-def rounded-xl p-5 overflow-hidden">
+                         <!-- wrapper One - title & like  -->
+                         <div class="flex items-center justify-between w-full">
+                              <div class="flex flex-col">
+                                   <a href="" class="text-secondary-500  text-16 font-semibold">CR - V</a>
+                                   <span class="font-medium text-12 text-secondary-300 mt-1">SUV</span>
+                              </div>
+                              <!-- heart Icon -->
+                              <span class="cursor-pointer">
+                                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                                             stroke="#90A3BF" stroke-width="1.5" stroke-linecap="round"
+                                             stroke-linejoin="round" />
+                                   </svg>
+
+
+                              </span>
+                         </div>
+
+                         <figcaption class="w-full flex flex-row md:flex-col items-center">
+                              <!-- imgae product -->
+                              <div class="w-full h-fit mt-7 ">
+
+                                   <img src="./src/image/carItemR2.png" class="mx-auto !w-[170px] !h-[70px]" alt="">
+                              </div>
+
+                              <!-- detail product -->
+                              <div
+                                   class="flex flex-col w-full justify-end items-end gap-3 md:justify-between my-10 md:flex-row">
+
+                                   <!-- gasoline effect -->
+                                   <div class="flex w-fit items-center ">
+                                        <span>
+                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M13.0317 5.44249L11.8651 4.85916C11.6492 4.75416 11.3809 4.83582 11.2759 5.05166C11.1651 5.27332 11.2526 5.53582 11.4684 5.64082L12.3959 6.10166V8.89582L10.2084 8.90166V2.91666C10.2084 1.74999 9.42675 1.16666 8.45841 1.16666H3.79175C2.82341 1.16666 2.04175 1.74999 2.04175 2.91666V12.3958H1.16675C0.927581 12.3958 0.729248 12.5942 0.729248 12.8333C0.729248 13.0725 0.927581 13.2708 1.16675 13.2708H11.0834C11.3226 13.2708 11.5209 13.0725 11.5209 12.8333C11.5209 12.5942 11.3226 12.3958 11.0834 12.3958H10.2084V9.77666L12.8334 9.77082C13.0784 9.77082 13.2709 9.57249 13.2709 9.33332V5.83332C13.2709 5.66999 13.1776 5.51832 13.0317 5.44249ZM3.50008 4.01916C3.50008 3.20832 3.99591 2.91666 4.60258 2.91666H7.65341C8.25425 2.91666 8.75008 3.20832 8.75008 4.01916V4.73666C8.75008 5.54166 8.25425 5.83332 7.64758 5.83332H4.60258C3.99591 5.83332 3.50008 5.54166 3.50008 4.73082V4.01916ZM3.79175 7.14582H5.54175C5.78091 7.14582 5.97925 7.34416 5.97925 7.58332C5.97925 7.82249 5.78091 8.02082 5.54175 8.02082H3.79175C3.55258 8.02082 3.35425 7.82249 3.35425 7.58332C3.35425 7.34416 3.55258 7.14582 3.79175 7.14582Z"
+                                                       fill="#90A3BF" />
+                                             </svg>
+
+
+
+                                        </span>
+                                        <p class="text-14 font-medium text-secondary-300 ml-1 lg:text-12">80L</p>
+                                   </div>
+
+                                   <!-- car effect -->
+                                   <div class="flex w-fit items-center">
+                                        <span>
+                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M7 1C3.688 1 1 3.688 1 7C1 10.312 3.688 13 7 13C10.312 13 13 10.312 13 7C13 3.688 10.318 1 7 1Z"
+                                                       fill="#90A3BF" />
+                                                  <rect x="2" y="2" width="10" height="10" rx="5" fill="white" />
+                                                  <path d="M7 3C4.792 3 3 4.792 3 7C3 9.208 4.792 11 7 11C9.208 11 11 9.208 11 7C11 4.792 9.212 3 7 3Z"
+                                                       fill="#90A3BF" />
+                                                  <rect x="8" y="6" width="4" height="2" fill="#90A3BF" />
+                                                  <rect x="2" y="6" width="4" height="2" fill="#90A3BF" />
+                                                  <rect x="6" y="8" width="2" height="4" fill="#90A3BF" />
+                                                  <rect x="4" y="4" width="6" height="6" rx="3" fill="white" />
+                                             </svg>
+
+
+
+                                        </span>
+                                        <p class="text-14 font-medium text-secondary-300 ml-1 lg:text-12">Manual
+                                        </p>
+                                   </div>
+
+                                   <!-- capacity effect -->
+                                   <div class="flex w-fit items-center">
+                                        <span>
+                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M5.25008 1.16666C3.72175 1.16666 2.47925 2.40916 2.47925 3.93749C2.47925 5.43666 3.65175 6.64999 5.18008 6.70249C5.22675 6.69666 5.27341 6.69666 5.30841 6.70249C5.32008 6.70249 5.32591 6.70249 5.33758 6.70249C5.34341 6.70249 5.34341 6.70249 5.34925 6.70249C6.84258 6.64999 8.01508 5.43666 8.02091 3.93749C8.02091 2.40916 6.77841 1.16666 5.25008 1.16666Z"
+                                                       fill="#90A3BF" />
+                                                  <path d="M8.21331 8.25418C6.58581 7.16918 3.93164 7.16918 2.29248 8.25418C1.55164 8.75001 1.14331 9.42085 1.14331 10.1383C1.14331 10.8558 1.55164 11.5208 2.28664 12.0108C3.10331 12.5592 4.17664 12.8333 5.24998 12.8333C6.32331 12.8333 7.39664 12.5592 8.21331 12.0108C8.94831 11.515 9.35664 10.85 9.35664 10.1267C9.35081 9.40918 8.94831 8.74418 8.21331 8.25418Z"
+                                                       fill="#90A3BF" />
+                                                  <path d="M11.6607 4.28165C11.754 5.41332 10.949 6.40499 9.83488 6.53915C9.82905 6.53915 9.82905 6.53915 9.82321 6.53915H9.80571C9.77071 6.53915 9.73571 6.53915 9.70655 6.55082C9.14071 6.57999 8.62155 6.39915 8.23071 6.06665C8.83155 5.52999 9.17571 4.72499 9.10571 3.84999C9.06488 3.37749 8.90155 2.94582 8.65655 2.57832C8.87821 2.46749 9.13488 2.39749 9.39738 2.37415C10.5407 2.27499 11.5615 3.12665 11.6607 4.28165Z"
+                                                       fill="#90A3BF" />
+                                                  <path d="M12.8276 9.67751C12.7809 10.2433 12.4192 10.7333 11.8126 11.0658C11.2292 11.3867 10.4942 11.5383 9.76506 11.5208C10.1851 11.1417 10.4301 10.6692 10.4767 10.1675C10.5351 9.44417 10.1909 8.75001 9.50256 8.19584C9.11172 7.88667 8.65672 7.64167 8.16089 7.46084C9.45006 7.08751 11.0717 7.33834 12.0692 8.14334C12.6059 8.57501 12.8801 9.11751 12.8276 9.67751Z"
+                                                       fill="#90A3BF" />
+                                             </svg>
+
+
+
+
+                                        </span>
+                                        <p class="text-14 font-medium text-secondary-300 ml-1 lg:text-12">2 People
+                                        </p>
+                                   </div>
+                              </div>
+                         </figcaption>
+                         <!-- pay section -->
+                         <div class="flex flex-wrap w-full items-center">
+                              <div class="flex flex-1 gap-1 items-center">
+                                   <div class="flex flex-col">
+                                        <p class="text-secondary-500 text-16 font-bold">$80.00/
+
+
+                                             <span class="text-secondary-300 text-12 font-bold ">day</span>
+
+                                        </p>
+                                        <p class="text-secondary-300 text-12 font-bold line-through">$100.00/
+                                        </p>
+                                   </div>
+                              </div>
+                              <div class="flex flex-1"> <button
+                                        class="w-full h-fit px-2 py-2 bg-primary-500 text-white font-semibold text-12 rounded-md whitespace-nowrap">Rental
+                                        Now</button></div>
+
+                         </div>
+
+
+                    </figure>
+
+               </div>
+
+               <div class="flex w-full  my-10 items-center">
+
+                    <p class="font-bold text-14 text-secondary-300">120 Char</p>
+                    <button
+                         class=" mx-auto w-fit h-fit px-2 py-2 bg-primary-500 text-white font-semibold text-16 rounded-md whitespace-nowrap">Show
+                         More Car</button>
+               </div>
+               </div>
+          </section>
+     </main>
+
+
+     <footer class="flex flex-col px-6 md:px-20">
+
+          <div class="flex flex-wrap justify-between gap-y-10 mb-10 border-b border-solid ">
+               <!-- sec one -->
+               <div class="flex flex-col  justify-start basis-full md:basis-1/2">
+                    <!-- logoType -->
+                    <p class="text-blue-500 font-bold text-[24px] tracking-normal lg:text-[32px]">MORENT</p>
+
+                    <p class="text-secondary-300  text-12 font-medium  mt-10 w-1/2">Our vision is to provide
+                         convenience and
+                         help increase your sales business.</p>
+               </div>
+
+
+               <!-- section one -->
+               <div class="flex basis-full md:basis-1/2 flex-wrap justify-between">
+                    <div class="flex flex-wrap">
+                         <div class="flex flex-col">
+                              <p class="text-secondary-500 text-[20px] font-semibold mb-10">About</p>
+                              <ul class="flex flex-col gap-2 flex-1 w-full">
+                                   <li class="text-secondary-300 text-[16px] font-medium"><a href="">
+                                             How it works
+                                        </a></li>
+                                   <li class="text-secondary-300 text-[16px] font-medium"> <a href="
+                              ">Featured</a></li>
+                                   <li class="text-secondary-300 text-[16px] font-medium"><a href="">
+                                             Partnership
+                                        </a></li>
+                                   <li class="text-secondary-300 text-[16px] font-medium"> <a href="">
+                                             Bussiness Relation
+                                        </a></li>
+
+                              </ul>
+                         </div>
+                    </div>
+
+                    <!-- section two -->
+                    <div class="flex flex-col">
+                         <p class="text-secondary-500 text-[20px] font-semibold mb-10">Socials</p>
+                         <ul class="flex flex-col gap-2 flex-1 w-full">
+                              <li class="text-secondary-300 text-[16px] font-medium"><a href="">
+                                        Discord
+                                   </a></li>
+                              <li class="text-secondary-300 text-[16px] font-medium"> <a href="
+                              ">Instagram</a></li>
+                              <li class="text-secondary-300 text-[16px] font-medium"><a href="">
+                                        Twitter
+                                   </a></li>
+                              <li class="text-secondary-300 text-[16px] font-medium"> <a href="">
+                                        FaceBook
+                                   </a></li>
+
+                         </ul>
+                    </div>
+
+                    <!-- section there -->
+                    <div class="flex flex-col">
+                         <p class="text-secondary-500 text-[20px] font-semibold mb-10">Community</p>
+                         <ul class="flex flex-col gap-2 flex-1 w-full">
+                              <li class="text-secondary-300 text-[16px] font-medium"><a href="">
+                                        Events
+                                   </a></li>
+                              <li class="text-secondary-300 text-[16px] font-medium"> <a href="
+                              ">Blog</a></li>
+                              <li class="text-secondary-300 text-[16px] font-medium"><a href="">
+                                        Podcast
+                                   </a></li>
+                              <li class="text-secondary-300 text-[16px] font-medium"> <a href="">
+                                        Invite a friend
+
+                                   </a></li>
+
+
+
+
+
+
+
+
+                         </ul>
+                    </div>
+               </div>
+          </div>
+
+          <div class="w-full flex flex-col md:flex-row  justify-between my-16 gap-5">
+               <p class="text-16 font-semibold text-secondary-500 pt-10 md:pt-0">©2022 MORENT. All rights reserved</p>
+
+               <div class="flex gap-x-16  ">
+                    <a href="">Privacy & Policy</a>
+                    <a href="">Terms & Condition</a>
+               </div>
+          </div>
+
+     </footer>
+
+     <script src="./src/script/jquery-3.6.3.min.js"></script>
+     <script src="./src/script/owl.carousel.min.js"></script>
+     <script src="./src/script/App.js"></script>
+</body>
+
+</html>

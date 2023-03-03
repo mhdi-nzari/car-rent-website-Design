@@ -1,0 +1,158 @@
+/* Tailwind base */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Components */
+
+
+
+input:focus {
+     border: none;
+     outline: none;
+}
+
+/* Hide Calendar Icon In Chrome */
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+     display: none;
+     -webkit-appearance: none;
+}
+
+/* Hide Clock Icon In Chrome */
+input[type="time"]::-webkit-calendar-picker-indicator {
+     background: none;
+}
+
+select {
+     width: 100%;
+     font-size: 1rem;
+     cursor: pointer;
+     line-height: 1.1;
+     background-color: #fff;
+     background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+}
+
+@font-face {
+     font-family: PlusJakartaSans;
+     src: url("../font/PlusJakartaSans[wght].ttf") format("truetype");
+     font-weight: 100 900;
+     font-display: swap;
+}
+
+/* @font-face {
+     font-family: "Jakarta";
+     font-weight: 300;
+     font-display: swap;
+     src: local("Plus Jakarta Sans"), url('../font/ttf/PlusJakartaSans-Light.ttf') format("truetype"),
+          url('../font/woff2/PlusJakartaSans-Light.woff') format("woff"),
+          url('../font/woff2/PlusJakartaSans-Light.woff2') format("woff2"),
+
+
+}
+
+@font-face {
+     font-family: "Jakarta";
+     font-weight: 400;
+     font-display: swap;
+     src: local("Plus Jakarta Sans"), url('../font/ttf/PlusJakartaSans-Regular.ttf') format("truetype"),
+          url('../font/woff2/PlusJakartaSans-Regular.woff') format("woff"),
+          url('../font/woff2/PlusJakartaSans-Regular.woff2') format("woff2"),
+}
+
+@font-face {
+     font-family: "Jakarta";
+     font-weight: 500;
+     font-display: swap;
+     src: local("Plus Jakarta Sans"), url('../font/ttf/PlusJakartaSans-Medium.ttf') format("truetype"),
+          url('../font/woff2/PlusJakartaSans-Medium.woff') format("woff"),
+          url('../font/woff2/PlusJakartaSans-Medium.woff2') format("woff2"),
+}
+
+@font-face {
+     font-family: "Jakarta";
+     font-weight: 600;
+     font-display: swap;
+     src: local("Plus Jakarta Sans"), url('../font/ttf/PlusJakartaSans-SemiBold.ttf') format("truetype"),
+          url('../font/woff2/PlusJakartaSans-SemiBold.woff') format("woff"),
+          url('../font/woff2/PlusJakartaSans-SemiBold.woff2') format("woff2"),
+}
+
+@font-face {
+     font-family: "Jakarta";
+     font-weight: 700;
+     font-display: swap;
+     src: local("Plus Jakarta Sans"), url('../font/ttf/PlusJakartaSans-Bold.ttf') format("truetype"),
+          url('../font/woff2/PlusJakartaSans-Bold.woff') format("woff"),
+          url('../font/woff2/PlusJakartaSans-Bold.woff2') format("woff2"),
+}
+
+@font-face {
+     font-family: "Jakarta";
+     font-weight: 800;
+     font-display: swap;
+     src: local("Plus Jakarta Sans"), url('../font/ttf/PlusJakartaSans-ExtraBold.ttf') format("truetype"),
+          url('../font/woff2/PlusJakartaSans-ExtraBold.woff') format("woff"),
+          url('../font/woff2/PlusJakartaSans-ExtraBold.woff2') format("woff2"),
+} */
+
+body {
+     font-family: "PlusJakartaSans", sans-serif;
+     font-weight: 400;
+     text-rendering: optimizeLegibility;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     font-smooth: never;
+     box-sizing: content-box
+}
+
+.owl-stage-outer {
+     padding-bottom: 30px;
+     padding-top: 10px;
+}
+
+/* width */
+::-webkit-scrollbar {
+     width: 5px;
+     border-radius: 20px;
+
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+     background: #f1f1f1;
+     border-radius: 20px;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+     background: #888;
+     border-radius: 20px;
+
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+     background: #3563E9;
+}
+
+button {
+     transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+     transform: scale(0.9);
+}
+
+.fixedNav {
+     position: fixed;
+     transition: top 0.5s ease-in-out;
+}
+
+.realativeNavDefault {
+     padding-block: 15px;
+}
